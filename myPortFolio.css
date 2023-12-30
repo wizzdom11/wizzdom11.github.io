@@ -903,16 +903,16 @@ form button:hover{
     }
     #services{
         min-height: 120vh;
-        margin-top: 80px;
+        margin-top: 60px;
         display: flex;
-        gap: 30px;
+        gap: 20px;
     }
     #services>div{
         gap: 20px;
         display: flex;
     }
     #services h1{
-        margin-bottom: 40px;
+        margin-bottom: -20px;
         font-size: 20px;
     }
     .web-under{
