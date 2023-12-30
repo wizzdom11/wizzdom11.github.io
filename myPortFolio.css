@@ -530,7 +530,7 @@ form input, textarea{
 form{
 
     background-color: #3a3939;
-    height: 65vh;
+    height: 300px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -785,8 +785,11 @@ form button:hover{
         justify-content: center;
         width: 100%;
     }
+    .link li{
+        margin-left: 55px;
+    }
     .words{
-        margin-top: -80px;
+        margin-top: -40px;
     }
     .words p{
         font-size: 19px;
@@ -826,10 +829,10 @@ form button:hover{
         
     }
     .pic img{
-        width: 290px;
-        height: 290px;
+        width: 270px;
+        height: 270px;
 
-        margin-bottom: 0px;
+        margin-top: -25px;
     }
     #about{
         min-height: 100vh;
@@ -910,8 +913,12 @@ form button:hover{
         font-size: 40px;
     }
     #services{
-        min-height: 100vh;
-        gap: 90px;
+        min-height: 130vh;
+        margin-top: 30px;
+    }
+    #services>div{
+        gap: 10px;
+        display: flex;
     }
     #services h1{
         margin-bottom: 0px;
@@ -946,6 +953,13 @@ form button:hover{
         justify-content: center;
         align-items: center;
         gap: 10px;
+    }
+form input{
+    padding: 17px;
+}
+
+    form button{
+        width: 100%;
     }
     .em{
         font-size: 15px;
