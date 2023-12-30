@@ -527,17 +527,6 @@ form input, textarea{
     background-color: #555454bb;
     color: white;
 }
-form{
-
-    background-color: #3a3939;
-    height: 300px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-}
 
 form button{
     padding: 9px 20px;
@@ -915,13 +904,15 @@ form button:hover{
     #services{
         min-height: 130vh;
         margin-top: 30px;
+        display: flex;
+        gap: 70px;
     }
     #services>div{
-        gap: 10px;
+        gap: 20px;
         display: flex;
     }
     #services h1{
-        margin-bottom: 0px;
+        margin-bottom: 40px;
         font-size: 20px;
     }
     .web-under{
@@ -935,17 +926,17 @@ form button:hover{
     }
     #contacts{
 
-        margin-top: 50px;
-        min-height: 100vh;
+        margin-top: 70px;
+        min-height: 130vh;
         gap: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 130vh;
 
 
     }
+    
     .cont{
         font-size: 16px;
         display: flex;
@@ -954,24 +945,24 @@ form button:hover{
         align-items: center;
         gap: 10px;
     }
-form input{
-    padding: 17px;
-}
-
-    form button{
-        width: 100%;
-    }
     .em{
         font-size: 15px;
 
      }
     .right{
-        margin-top: 0;
         width: 100%;
-        margin-top: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .right button{
         width: 71%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -5rem;
     }
     .my-info h1{
         font-size: 25px;
