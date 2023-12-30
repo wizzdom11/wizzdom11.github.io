@@ -902,10 +902,10 @@ form button:hover{
         font-size: 40px;
     }
     #services{
-        min-height: 130vh;
+        min-height: 100vh;
         margin-top: 30px;
         display: flex;
-        gap: 70px;
+        gap: 40px;
     }
     #services>div{
         gap: 20px;
@@ -926,7 +926,7 @@ form button:hover{
     }
     #contacts{
 
-        height: 100vh;
+        height: 50vh;
         gap: 10px;
         display: flex;
         flex-direction: column;
