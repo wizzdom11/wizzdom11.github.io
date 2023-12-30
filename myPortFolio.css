@@ -18,7 +18,7 @@ nav{
     position: relative;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.678);
-    height: 60px;
+    height: 95px;
     display: flex;
     justify-content:space-between;
     z-index: 999;
@@ -64,6 +64,11 @@ h3.logo{
       justify-content: end;
       gap: 20px;
       margin-right: 45px;
+}
+.link a{
+    font-size: 20px;
+    font-weight: 500;
+
 }
 
 .toggle{
@@ -156,8 +161,8 @@ h1 span{
 }
 .pic img{
     overflow: hidden;
-    height: 320px;
-    width: 300px;
+    height: 390px;
+    width: 390px;
     border-radius: 100%;
     animation: spread 2s ease-in-out;
     border: 10px solid #0082e6;
@@ -207,7 +212,7 @@ h1 span{
     animation: transitionIn 1s ease-in-out;
 }
 .btn button{
-    padding: 6px 6px;
+    padding: 10px 12px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
@@ -221,11 +226,11 @@ box-shadow: 0 0 8px 2px #0b27ca;
 transform: scale(1.1);
 }
 .btn-download{
-    padding: 10px 12px;
+    padding: 16px 20px;
     font-size: 15px;
     background-color:rgb(3, 3, 3);
     color: white;
-    border-radius: 19px;
+    border-radius: 23px;
     box-shadow: 0 0 2px 1px #323232;
 }
 .btn-download:hover{
@@ -514,7 +519,7 @@ h1 span{
     font-size: 15px;
 }
 form input, textarea{
-    width:  80%;
+    width:  90%;
     padding: 10px 12px;
     margin: 10px;
     border-radius: 6px;
@@ -525,12 +530,13 @@ form input, textarea{
 form{
 
     background-color: #3a3939;
-    height: 70vh;
+    height: 60vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90%;
 }
 
 form button{
@@ -650,7 +656,12 @@ form button:hover{
 @media (max-width:1000px) {
 
     .link{
-        margin-right: 70px;
+        margin-right: 10px;
+    }
+    .nav{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
     }
     #contacts{
         gap: 80px;
@@ -665,7 +676,7 @@ form button:hover{
      justify-content: center;
     }
     .contain{
-        margin-top: 10px;
+        margin-top: 0px;
     }
     .Dd{
         width: 300px;
@@ -698,10 +709,10 @@ form button:hover{
 }
 @media(max-width:763px) {
     .nav{
-        height: 9vh;
+        height: 7vh;
     }
     .nav h3{
-        font-size: 20px;
+        font-size: 30px;
     }
     @keyframes mave {
         0%{background-position: 0 0;}
@@ -718,9 +729,10 @@ form button:hover{
         border:1px solid #0082e6;
         cursor: pointer;
         border-radius: 9px;
+        width: 80%;
     }
-    .build{
-        font-size: 10px;
+    .build p{
+        font-size: 17px;
     }
     .parent>div:hover{
         margin-top: 0;
@@ -747,7 +759,7 @@ form button:hover{
         justify-items: center;
         align-items: center;
         width: 100%;
-        margin-top: 40px;
+        margin-top: 300px;
         display: none;
         animation: transitionIn .3s ease-in;
         z-index: 999;
@@ -775,18 +787,18 @@ form button:hover{
         margin-top: -80px;
     }
     .words p{
-        font-size: 16px;
+        font-size: 19px;
     }
     .words h1{
-        font-size: 20px;
+        font-size: 23px;
     }
     .words h2{
-        font-size: 18px;
+        font-size: 23px;
     }
     .toggle{
         display: flex;
         color: black;
-        font-size:24px;
+        font-size:40px;
         margin-right: 8px;
 
     }
@@ -807,13 +819,13 @@ form button:hover{
     #whole{
         flex-direction: column;
         row-gap: 90px;
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
         
     }
     .pic img{
-        width: 160px;
-        height: 160px;
+        width: 250px;
+        height: 250px;
 
         margin-bottom: 0px;
     }
@@ -828,7 +840,7 @@ form button:hover{
         
     }
     #about{
-        min-height: 110vh;
+        min-height: 100vh;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -892,7 +904,7 @@ form button:hover{
         margin-left: 0;
     }
     .parent h2{
-        font-size: 17px;
+        font-size: 20px;
     }
     .parent>div:hover{
         margin-top: -5px;
@@ -903,17 +915,26 @@ form button:hover{
         font-size: 40px;
     }
     #services{
-        min-height: 160vh;
+        min-height: 120vh;
         gap: 90px;
     }
     #services h1{
-        margin-bottom: 68px;
+        margin-bottom: 0px;
         font-size: 20px;
+    }
+    .web-under{
+        font-size: 17px;
+    }
+    .web{
+        font-size: 17px;
+    }
+    .ui-under{
+        font-size: 17px;
     }
     #contacts{
 
         margin-top: 50px;
-        min-height: 110vh;
+        min-height: 100vh;
         gap: 10px;
         display: flex;
         flex-direction: column;
@@ -924,7 +945,7 @@ form button:hover{
 
     }
     .cont{
-        font-size: 15px;
+        font-size: 16px;
         display: flex;
         flex-direction: column;
         justify-content: center;
