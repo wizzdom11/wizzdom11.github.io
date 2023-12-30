@@ -926,8 +926,7 @@ form button:hover{
     }
     #contacts{
 
-        margin-top: 70px;
-        min-height: 130vh;
+        height: 100vh;
         gap: 10px;
         display: flex;
         flex-direction: column;
@@ -951,9 +950,9 @@ form button:hover{
      }
     .right{
         width: 100%;
-        display: flex;
         align-items: center;
         justify-content: center;
+        display: none;
     }
     .right button{
         width: 71%;
@@ -963,6 +962,7 @@ form button:hover{
         flex-direction: column;
         align-items: center;
         margin-top: -5rem;
+        display: none;
     }
     .my-info h1{
         font-size: 25px;
