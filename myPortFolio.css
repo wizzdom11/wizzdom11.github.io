@@ -519,7 +519,7 @@ h1 span{
     font-size: 15px;
 }
 form input, textarea{
-    width:  90%;
+    width:  70%;
     padding: 10px 12px;
     margin: 10px;
     border-radius: 6px;
@@ -530,7 +530,7 @@ form input, textarea{
 form{
 
     background-color: #3a3939;
-    height: 60vh;
+    height: 65vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -752,7 +752,6 @@ form button:hover{
         margin-left: -50px;
     }
     .link{
-        overflow: hidden;
         position: fixed;
         display: flex;
         flex-direction:column;
@@ -782,6 +781,9 @@ form button:hover{
         flex-direction: column;
         row-gap: 20px;
         padding: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
     .words{
         margin-top: -80px;
@@ -818,26 +820,16 @@ form button:hover{
     }
     #whole{
         flex-direction: column;
-        row-gap: 90px;
+        row-gap: 70px;
         min-height: 100vh;
         width: 100%;
         
     }
     .pic img{
-        width: 250px;
-        height: 250px;
+        width: 290px;
+        height: 290px;
 
         margin-bottom: 0px;
-    }
-    @keyframes wizz {
-        0%{
-            margin-bottom: 0px;
-
-        }
-        100%{
-            margin-bottom: 0px;
-        }
-        
     }
     #about{
         min-height: 100vh;
@@ -869,16 +861,16 @@ form button:hover{
     .contain{
         margin-top: 100px;
         position: relative;
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
         transform: rotate(45deg);
         background-color: #0082e6;
         border-radius: 20px;
         margin-left: 20px;
     }
     .contain img{
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
 
     }
     .content{
@@ -906,6 +898,9 @@ form button:hover{
     .parent h2{
         font-size: 20px;
     }
+    .parent>div{
+        width: 93%;
+    }
     .parent>div:hover{
         margin-top: -5px;
         box-shadow: 0 0 8px 1px #0082e6;
@@ -915,7 +910,7 @@ form button:hover{
         font-size: 40px;
     }
     #services{
-        min-height: 120vh;
+        min-height: 100vh;
         gap: 90px;
     }
     #services h1{
@@ -962,7 +957,7 @@ form button:hover{
         margin-top: 1.8rem;
     }
     .right button{
-        width: 80%;
+        width: 71%;
     }
     .my-info h1{
         font-size: 25px;
