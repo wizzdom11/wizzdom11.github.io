@@ -905,14 +905,14 @@ form button:hover{
         min-height: 120vh;
         margin-top: 60px;
         display: flex;
-        gap: 20px;
+        gap: 30px;
     }
     #services>div{
         gap: 20px;
         display: flex;
     }
     #services h1{
-        margin-bottom: -20px;
+        margin-bottom: 30px;
         font-size: 20px;
     }
     .web-under{
@@ -959,7 +959,8 @@ form button:hover{
         width: 71%;
     }
     .my-info p{
-        font-size: 18px;
+        font-size: 17px;
+        text-align: center;
     }
     form{
         display: flex;
@@ -976,7 +977,13 @@ form button:hover{
         color:#0082e6;
     }
     .fa h2{
-      font-size: 20px;
+      font-size: 24px;
+    }
+    .fa h3{
+        font-size: 20px;
+    }
+    .fa p{
+        font-size: 17px;
     }
     .quest{
         font-size: 13px;
