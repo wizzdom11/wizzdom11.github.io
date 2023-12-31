@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="./faqs.css">
+    <link rel="stylesheet" href="./myPortFolio.css">
     <link rel="stylesheet" 
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -75,10 +75,7 @@
             <p> &copy; 2023 Valentine Wisdom. All rights reserved</p>
             </div>
     </div>
-    <script src="./myPortFolio.js"></script>
     <script>
-    let toggle = document.querySelector('.toggle');
-    let MAN = document.querySelector('.ri-menu-fill');
     let hea = document.querySelectorAll('.great');
     let down =document.querySelectorAll('.ri-arrow-down-s-line');
     let para = document.querySelectorAll('.par');
@@ -87,12 +84,6 @@
     let men = document.querySelector('.ri-menu-fill');
     let nav = document.querySelector('.nav');
 
-
-    toggle.addEventListener('click', (e)=>{
-    droplink.classList.toggle('active');
-    MAN.classList.toggle('active');
-    toggle.classList.toggle('ri-close-line');
-})
 
    hea[0].addEventListener('click', (e)=>{
    down[0].classList.toggle('ri-arrow-up-s-line');

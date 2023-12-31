@@ -771,19 +771,7 @@ form button:hover{
             transform: translateX(0);
         }
     }
-    .link ul{
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-        padding: 30px;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .link li{
-        margin-left: 55px;
-    }
+   
     .words{
         margin-top: -40px;
     }
