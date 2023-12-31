@@ -7,7 +7,44 @@
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <style>
+        @media(max-width:763px){
+            .link{
+                display: none;
+            }
+            .link ul{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+           }
+           .link.active{
+        display: flex;
+         }
+         .fa h2{
+      font-size: 22px;
+    }
+    .fa h3{
+        font-size: 20px;
+    }
+    .quest p{
+        font-size: 17px;
+    }
+    .quest{
+        font-size: 13px;
+        margin-left: 45px;
+       }
+       .tra{
+        height: 100%;
+        width: 100%;
+       }
+        }
         
+    
+
     </style>
 </head>
 <body>
@@ -57,10 +94,6 @@
       
     
 
-
-
-
-
       <div class="fuuter">
         <h2>Valentine Wisdom</h2>
         <ul>
@@ -82,6 +115,7 @@
             <p> &copy; 2023 Valentine Wisdom. All rights reserved</p>
             </div>
     </div>
+    <script src="./myPortFolio.js"></script>
     <script>
 
     let hea = document.querySelectorAll('.great');
