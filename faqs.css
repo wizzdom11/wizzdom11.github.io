@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+nav{
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.678);
+    height: 95px;
+    display: flex;
+    justify-content:space-between;
+    z-index: 999;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 3px 1px #323232;
+}
+.fa{
+    background-image: url("./getInTouchThree.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: good 5s linear infinite;
+    animation-direction: alternate; 
+
+
+}
+@keyframes good {
+    0%{background-position: 0 0;}
+    100%{background-position: -300px 0;}
+}
+.fa span{
+    color: #0082e6;
+}
+.fa h2{
+    margin-bottom: 40px;
+}
+.quest{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.quest h3{
+    cursor: pointer;
+}
+.quest h3:hover{
+    color: #0082e6;
+}
+.par{
+    display: none;
+}
+.par.active{
+ display: flex;
+}
+.tra{
+   animation: transitionIn 1s;
+}
+
+
+@keyframes transitionIn {
+    from{
+       opacity: 0;
+       transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+h3.logo{
+    color:black;
+    font-size: 35px;
+    padding: 15px 60px;
+
+}
+.link{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.link a:hover,
+.link a.active{
+    color: #0082e6;
+}
+
+.link ul{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 20px;
+      margin-right: 45px;
+      list-style-type:none;
+}
+.link a{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+a{
+    color: black;
+    font-size: 17px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+a:hover{
+    color: #323232;
+}
+@media (max-width:1000px) {
+
+    .link{
+        margin-right: 10px;
+    }
+
+}
+    @media(max-width:763px) {
+        .nav{
+            height: 7vh;
+        }
+        .nav h3{
+            font-size: 30px;
+        }
+        nav h3{
+            margin-left: -50px;
+        }
+        .link{
+            position: fixed;
+            display: flex;
+            flex-direction:column;
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 300px;
+            display: none;
+            animation: transitionIn .3s ease-in;
+            z-index: 999;
+            backdrop-filter: blur(7px);
+            background: rgb(255, 255, 255);
+        }
+        .link{
+            position: fixed;
+            display: flex;
+            flex-direction:column;
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 300px;
+            display: none;
+            animation: transitionIn .3s ease-in;
+            z-index: 999;
+            backdrop-filter: blur(7px);
+            background: rgb(255, 255, 255);
+        }
+        .toggle{
+            display: flex;
+            color: black;
+            font-size:40px;
+            margin-right: 8px;
+    
+        }
+        .fa h2{
+            font-size: 22px;
+          }
+          .fa h3{
+              font-size: 20px;
+          }
+          .quest p{
+              font-size: 17px;
+          }
+          .quest{
+              font-size: 13px;
+              margin-left: 45px;
+          }
+          .fuuter ul{
+              gap: 30px;
+          }
+          .fuuter h2{
+            font-size: 19px;
+          }
+          .my-info h1{
+              font-size: 20px;
+          }
+          .faa h2{
+              text-align: center;
+              font-size: 18px;
+          }
+          .tra{
+              height: 100%;
+              width: 100%;
+          }
+          .ahh{
+              display: flex;
+              align-self: center;
+              justify-content: center;
+              text-align: center;
+              align-self: center;
+      
+          }.social a{
+              font-size: 10x;
+          }
+
+    }
