@@ -585,7 +585,6 @@ form button:hover{
     flex-direction: row;
 }
 .fa{
-    background-image: url("./getInTouchThree.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -627,6 +626,7 @@ form button:hover{
  display: flex;
 }
 .tra{
+   
    animation: transitionIn 1s;
 }
 
@@ -998,7 +998,7 @@ form button:hover{
         font-size: 18px;
     }
     .tra{
-        height: 100%;
+        height: 100vh;
         width: 100%;
     }
     .ahh{
