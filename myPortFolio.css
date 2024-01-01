@@ -748,18 +748,19 @@ form button:hover{
         margin-left: -50px;
     }
     .link{
+        overflow: hidden;
         position: fixed;
         display: flex;
         flex-direction:column;
         justify-items: center;
         align-items: center;
         width: 100%;
-        margin-top: 265px;
+        margin-top: 270px;
         display: none;
         animation: transitionIn .3s ease-in;
         z-index: 999;
         backdrop-filter: blur(7px);
-        background: rgb(255, 255, 255);
+        background: rgb(255, 255, 255); 
     }
     @keyframes dog {
         0%{
@@ -772,12 +773,13 @@ form button:hover{
         }
     }
     .link ul{
+        overflow: hidden;
         display: flex;
         flex-direction: column;
+        row-gap: 20px;
         margin-left: 40px;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        padding: 10px;
+       
     }
    
     .words{
