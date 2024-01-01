@@ -931,7 +931,7 @@ form button:hover{
     }
     #contacts{
 
-        height: 70vh;
+        height: 50vh;
         gap: 10px;
         display: flex;
         flex-direction: column;
@@ -1012,9 +1012,6 @@ form button:hover{
     }
     .my-info h1{
         font-size: 20px;
-    }
-    .fa{
-        margin-bottom: -5rem;
     }
     .fa h2{
         text-align: center;
