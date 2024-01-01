@@ -983,6 +983,7 @@ form button:hover{
     }
     .fa h2{
       font-size: 20px;
+      margin-bottom: 40px;
     }
     .fa h3{
         font-size: 17px;
@@ -1002,7 +1003,7 @@ form button:hover{
         align-items: center;
         width: 100%;
         justify-content: center;
-        gap: 30px;
+        gap: 18px;
     }
     .fuuter ul{
         gap: 30px;
@@ -1021,7 +1022,7 @@ form button:hover{
         font-size: 17px;
     }
     .fa{
-        gap: 31px;
+        gap: 20px;
     }
     #tra{
         height: 100vh;
