@@ -931,7 +931,7 @@ form button:hover{
     }
     #contacts{
 
-        height: 30vh;
+        height: 45vh;
         gap: 10px;
         display: flex;
         flex-direction: column;
@@ -1003,7 +1003,7 @@ form button:hover{
         align-items: center;
         width: 100%;
         justify-content: center;
-        gap: 18px;
+        gap: 15px;
     }
     .fuuter ul{
         gap: 30px;
