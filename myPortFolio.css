@@ -754,13 +754,12 @@ form button:hover{
         justify-items: center;
         align-items: center;
         width: 100%;
-        margin-top: 260px;
+        margin-top: 265px;
         display: none;
         animation: transitionIn .3s ease-in;
         z-index: 999;
         backdrop-filter: blur(7px);
         background: rgb(255, 255, 255);
-        box-shadow: 0 0 2px 1px #323232;
     }
     @keyframes dog {
         0%{
@@ -776,6 +775,9 @@ form button:hover{
         display: flex;
         flex-direction: column;
         margin-left: 40px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
    
     .words{
@@ -933,7 +935,7 @@ form button:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top:50px;
+        margin-top:0px;
 
 
     }
@@ -981,14 +983,19 @@ form button:hover{
       font-size: 20px;
     }
     .fa h3{
-        font-size: 17px;
+        font-size: 16px;
+    }
+    .great{
+        text-align: center;
     }
     .quest p{
         font-size: 17px;
     }
     .quest{
-        font-size: 13px;
-        margin-left: 45px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
     }
     .fuuter ul{
         gap: 30px;
