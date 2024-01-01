@@ -14,6 +14,8 @@ const first = document.querySelector('.pic');
 const rec = document.querySelector('.rec');
 const Hidd = document.querySelectorAll('.hiadde');
 const Butt = document.querySelectorAll('.ope');
+let hea = document.querySelectorAll('.great');
+let para = document.querySelectorAll('.par');
 goOn.style.display= 'none';
 
 toggle.addEventListener('click', (e)=>{
@@ -110,5 +112,35 @@ weg[2].addEventListener('mouseout', (e)=>{
         icon[2].style.color ="black";
 })
 
+hea[0].addEventListener('click', (e)=>{
+        console.log("i love you mum");
+ down[0].classList.toggle('ri-arrow-up-s-line');
+ para[0].classList.toggle('active');
+   })
+
+hea[1].addEventListener('click', (e)=>{
+ down[1].classList.toggle('ri-arrow-up-s-line');
+para[1].classList.toggle('active');
+ })
+       
+ hea[2].addEventListener('click', (e)=>{
+ down[2].classList.toggle('ri-arrow-up-s-line');
+para[2].classList.toggle('active');
+ })
+
+hea[3].addEventListener('click', (e)=>{
+ down[3].classList.toggle('ri-arrow-up-s-line');
+para[3].classList.toggle('active');
+})
+       
+hea[4].addEventListener('click', (e)=>{
+ down[4].classList.toggle('ri-arrow-up-s-line');
+ para[4].classList.toggle('active');
+ })
+
+ hea[5].addEventListener('click', (e)=>{
+ down[5].classList.toggle('ri-arrow-up-s-line');
+para[5].classList.toggle('active');
+  })
 
 

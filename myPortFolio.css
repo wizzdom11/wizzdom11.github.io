@@ -991,7 +991,8 @@ form button:hover{
         text-align: center;
     }
     .quest p{
-        font-size: 17px;
+        font-size: 15px;
+        text-align: center;
     }
     .quest h3{
         font-size: 19px;
@@ -1001,6 +1002,7 @@ form button:hover{
         align-items: center;
         width: 100%;
         justify-content: center;
+        gap: 10px;
     }
     .fuuter ul{
         gap: 30px;
