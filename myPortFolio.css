@@ -985,13 +985,16 @@ form button:hover{
       font-size: 20px;
     }
     .fa h3{
-        font-size: 16px;
+        font-size: 17px;
     }
     .great{
         text-align: center;
     }
     .quest p{
         font-size: 17px;
+    }
+    .quest h3{
+        font-size: 19px;
     }
     .quest{
         display: flex;
@@ -1014,13 +1017,13 @@ form button:hover{
     }
     .fa h2{
         text-align: center;
-        font-size: 17px;
+        font-size: 20px;
     }
     .fa p{
         font-size: 17px;
     }
     #tra{
-        min-height: 120vh;
+        min-height: 100vh;
         width: 100%;
     }
     .ahh{
