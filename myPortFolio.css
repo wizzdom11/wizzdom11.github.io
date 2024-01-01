@@ -625,7 +625,7 @@ form button:hover{
 .par.active{
  display: flex;
 }
-.tra{
+#tra{
    
    animation: transitionIn 1s;
 }
@@ -754,12 +754,13 @@ form button:hover{
         justify-items: center;
         align-items: center;
         width: 100%;
-        margin-top: 300px;
+        margin-top: 260px;
         display: none;
         animation: transitionIn .3s ease-in;
         z-index: 999;
         backdrop-filter: blur(7px);
         background: rgb(255, 255, 255);
+        box-shadow: 0 0 2px 1px #323232;
     }
     @keyframes dog {
         0%{
@@ -770,6 +771,11 @@ form button:hover{
             -webkit-transform: translateX(0);
             transform: translateX(0);
         }
+    }
+    .link ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
     }
    
     .words{
@@ -927,7 +933,7 @@ form button:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top:100px;
+        margin-top:50px;
 
 
     }
@@ -972,10 +978,10 @@ form button:hover{
         color:#0082e6;
     }
     .fa h2{
-      font-size: 22px;
+      font-size: 20px;
     }
     .fa h3{
-        font-size: 20px;
+        font-size: 17px;
     }
     .quest p{
         font-size: 17px;
@@ -993,12 +999,19 @@ form button:hover{
     .my-info h1{
         font-size: 20px;
     }
-    .faa h2{
-        text-align: center;
-        font-size: 18px;
+    .fa{
+        min-height: 120vh;
+        margin-bottom: -5rem;
     }
-    .tra{
-        height: 100vh;
+    .fa h2{
+        text-align: center;
+        font-size: 17px;
+    }
+    .fa p{
+        font-size: 17px;
+    }
+    #tra{
+        min-height: 120vh;
         width: 100%;
     }
     .ahh{
