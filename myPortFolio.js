@@ -18,22 +18,32 @@ let hea = document.querySelectorAll('.great');
 let para = document.querySelectorAll('.par');
 goOn.style.display= 'none';
 
-document.addEventListener('DOMContentLoaded', function(){
-  let menuItems = document.querySelectorAll('.link a');
-  menuItems.forEach(function(item){
-        item.addEventListener('click', function(){
-                droplink.style.display ='none'
-        })
-  })
+// document.addEventListener('DOMContentLoaded', function(){
+//   let menuItems = document.querySelectorAll('.link a');
+//   menuItems.forEach(function(item){
+//         item.addEventListener('click', function(){
+//                 droplink.classList.remove('active');
+//         })
+//   })
 
-})
+// })
+
+
+// function handleItemClick(){
+
+//         droplink.classList.remove('active');
+// }
 
 toggle.addEventListener('click', (e)=>{
-//     droplink.classList.toggle('active');
+    droplink.classList.toggle('active');
 //     MAN.classList.toggle('active');
 //     toggle.classList.toggle('ri-close-line');
-    droplink.style.display =(droplink.style.display==='block') ? 'none': 'block' ; 
+//     droplink.style.display =(droplink.style.display==='block') ? 'none': 'block' ; 
 })
+function handleItemClick(){
+        droplink.classList.remove('active')
+}
+
 
 if (MAN.classList ==='ri-menu-fill'){
         MAN.classList='ri-close-line'
