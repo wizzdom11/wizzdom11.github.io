@@ -18,11 +18,28 @@ let hea = document.querySelectorAll('.great');
 let para = document.querySelectorAll('.par');
 goOn.style.display= 'none';
 
-toggle.addEventListener('click', (e)=>{
-    droplink.classList.toggle('active');
-    MAN.classList.toggle('active');
-    toggle.classList.toggle('ri-close-line');
+document.addEventListener('DOMContentLoaded', function(){
+  let menuItems = document.querySelectorAll('.link a');
+  menuItems.forEach(function(item){
+        item.addEventListener('click', function(){
+                droplink.style.display ='none'
+        })
+  })
+
 })
+
+toggle.addEventListener('click', (e)=>{
+//     droplink.classList.toggle('active');
+//     MAN.classList.toggle('active');
+//     toggle.classList.toggle('ri-close-line');
+    droplink.style.display =(droplink.style.display==='block') ? 'none': 'block' ; 
+})
+
+if (MAN.classList ==='ri-menu-fill'){
+        MAN.classList='ri-close-line'
+}  else{
+        MAN.classList='ri-menu-fill' 
+};
 
 document.addEventListener('scroll', (e) =>{
     const scrolValue = window.scrollY;
