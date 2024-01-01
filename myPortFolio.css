@@ -907,7 +907,7 @@ form button:hover{
         font-size: 40px;
     }
     #services{
-        min-height: 120vh;
+        min-height: 110vh;
         margin-top: 60px;
         display: flex;
         gap: 30px;
@@ -1002,7 +1002,7 @@ form button:hover{
         align-items: center;
         width: 100%;
         justify-content: center;
-        gap: 10px;
+        gap: 30px;
     }
     .fuuter ul{
         gap: 30px;
@@ -1020,10 +1020,13 @@ form button:hover{
     .fa p{
         font-size: 17px;
     }
+    .fa{
+        gap: 30px;
+    }
     #tra{
         height: 100vh;
         width: 100%;
-        gap: 35px;
+        
     }
     .ahh{
         display: flex;
