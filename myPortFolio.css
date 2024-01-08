@@ -750,10 +750,10 @@ form button:hover{
         margin-left:-25px ;
     }
     #tra{
-        min-height: 120vh;
+        min-height: 130vh;
     }
     .fa{
-        margin-bottom: -10rem;
+        margin-top: 65px;
     }
     .ahh{
         display: flex;
