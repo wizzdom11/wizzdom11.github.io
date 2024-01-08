@@ -676,7 +676,7 @@ form button:hover{
     }
     .link a{
         font-size: 17px;
-        font-weight: 200;
+        font-weight: 500;
     
     }
     .pic img{
@@ -707,6 +707,7 @@ form button:hover{
     }
     .parent>div{
         height: auto;
+        width: auto;
     }
     #about{
     display: flex;
@@ -749,10 +750,10 @@ form button:hover{
         margin-left:-25px ;
     }
     #tra{
-        min-height: 100vh;
+        min-height: 120vh;
     }
     .fa{
-        margin-bottom: -5rem;
+        margin-bottom: -10rem;
     }
     .ahh{
         display: flex;
