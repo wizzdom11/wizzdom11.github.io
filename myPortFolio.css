@@ -101,7 +101,7 @@ a:hover{
     align-items: center;
     width: 100%;
     height: 100vh;
-    gap: 60px;
+    gap: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -118,9 +118,6 @@ a:hover{
 .words{
     text-align: center;
     font-size: 19px;
-}
-h1 span{
-    color: #0082e6;
 }
 .para{
     overflow: hidden;
@@ -159,11 +156,35 @@ h1 span{
     background:none;
     color: blue;
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animated-text {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+    animation-direction: alternate;
+}
+.animated-text:nth-child(1) { animation-delay: 0s; }
+.animated-text:nth-child(2) { animation-delay: 0.5s; }
+.animated-text:nth-child(3) { animation-delay: 0.7s; }
+.animated-text:nth-child(4) { animation-delay: 0.9s; }
+.animated-text:nth-child(5) { animation-delay: 1s; }
+.animated-text:nth-child(6) { animation-delay: 1s; }
+
 .pic img{
     overflow: hidden;
     height: 390px;
     width: 390px;
     border-radius: 100%;
+    margin-left: 15px;
     animation: spread 2s ease-in-out;
     border: 10px solid #0082e6;
     animation-iteration-count: infinite;
@@ -172,10 +193,10 @@ h1 span{
 @keyframes spread {
     0%{box-shadow: 0 0 0px 0px #0082e6;}
     20%{box-shadow: 0 0 7px 6px #0082e6;}
-    40%{box-shadow: 0 0 20px 7px #0082e6;}
-    60%{box-shadow: 0 0 40px 10px #0082e6;}
-    80%{box-shadow: 0 0 41px 15px #0082e6;}
-    100%{box-shadow: 0 0 42px 16px #0082e6;}
+    40%{box-shadow: 0 0 10px 7px #0082e6;}
+    60%{box-shadow: 0 0 13px 8px #0082e6;}
+    80%{box-shadow: 0 0 16px 9px #0082e6;}
+    100%{box-shadow: 0 0 20px 10px #0082e6;}
     
 }
 .check{
@@ -728,7 +749,7 @@ form button:hover{
         width: 80%;
     }
     .build p{
-        font-size: 17px;
+        font-size: 15px;
     }
     .parent>div:hover{
         margin-top: 0;
