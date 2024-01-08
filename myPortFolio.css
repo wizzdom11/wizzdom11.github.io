@@ -674,17 +674,33 @@ form button:hover{
     .link{
         margin-right: 10px;
     }
+    .link a{
+        font-size: 17px;
+        font-weight: 200;
+    
+    }
     .pic img{
         height: 310px;
         width: 310px;
     }
+    .words h1{
+        font-size: 25px;
+    }
+    .words h2{
+        font-size: 24px;
+    }
+    .build p{
+        font-size: 16px;
+    }
     .para{
         margin-top: 15px;
+        font-size: 16px;
     }
     .nav{
         justify-content: space-between;
         display: flex;
         align-items: center;
+        height: 60px;
     }
     #contacts{
         gap: 80px;
@@ -715,10 +731,28 @@ form button:hover{
         justify-content: center;
         margin-left: -60px;
         width: 100%;
+        font-size: 24px;
     }
+    #services h1{
+        font-size: 24px;
+    }
+    .parent >div{
+        width: auto;
+        border:1px solid #0082e6;
+        cursor: pointer;
+        border-radius: 9px;
+        position: relative;
+    }
+
     .next p, h4{
         margin-right:40px ;
         margin-left:-25px ;
+    }
+    #tra{
+        min-height: 100vh;
+    }
+    .fa{
+        margin-bottom: -5rem;
     }
     .ahh{
         display: flex;
