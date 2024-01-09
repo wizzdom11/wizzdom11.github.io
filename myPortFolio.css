@@ -704,6 +704,8 @@ form button:hover{
     }
     #contacts{
         gap: 80px;
+        display: flex;
+
     }
     .parent>div{
         height: auto;
@@ -759,6 +761,12 @@ form button:hover{
         height: 100vh;
         justify-content: center;
         align-items: center;
+    }
+    .my-info h1{
+      font-size: 24px;
+    }
+    .my-info{
+        margin-left: 20px;
     }
     #tra{
         height: 130vh;
