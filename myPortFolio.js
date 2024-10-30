@@ -16,6 +16,7 @@ const Hidd = document.querySelectorAll('.hiadde');
 const Butt = document.querySelectorAll('.ope');
 let hea = document.querySelectorAll('.great');
 let para = document.querySelectorAll('.par');
+const cancel = document.querySelector('.ri-close-line')
 goOn.style.display= 'none';
 
 // document.addEventListener('DOMContentLoaded', function(){
@@ -33,13 +34,38 @@ goOn.style.display= 'none';
 
 //         droplink.classList.remove('active');
 // }
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i< reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+
+        }
+            
+    
+    }}
 
 toggle.addEventListener('click', (e)=>{
-    droplink.classList.toggle('active');
+        droplink.style.display = 'flex';
+        console.log('good')
+    })
+    cancel.addEventListener('click', (e)=>{
+        droplink.style.display ='none'
+    })
 //     MAN.classList.toggle('active');
 //     toggle.classList.toggle('ri-close-line');
 //     droplink.style.display =(droplink.style.display==='block') ? 'none': 'block' ; 
-})
+
 function handleItemClick(){
         droplink.classList.remove('active')
 }

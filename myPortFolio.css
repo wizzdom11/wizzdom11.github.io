@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -5,9 +6,10 @@
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
 }
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     width: 100%;
     height: 100vh;
     background-size: 100% 100%;
@@ -24,6 +26,9 @@ nav{
     z-index: 999;
     backdrop-filter: blur(6px);
     box-shadow: 0 0 3px 1px #323232;
+}
+.ri-close-line{
+    display: none;
 }
 .hide{
     opacity: 0;
@@ -67,7 +72,6 @@ h3.logo{
 }
 .link a{
     font-size: 20px;
-    font-weight: 700;
 
 }
 
@@ -100,7 +104,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     gap: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -240,28 +244,29 @@ a:hover{
     padding: 10px 12px;
     border-radius: 30px;
     border: none;
+     background-color: #0082e6;
     cursor: pointer;
      box-shadow: 0 0 4px 1px #323232;
+     transition: background-color 0.2s, transform 0.2s;
      
 }
 .btn button:hover{
-transition:  all .1s ease-in-out;
-color: blue;
+color: black;
 box-shadow: 0 0 8px 2px #0b27ca;
-transform: scale(1.1);
 }
 .btn-download{
-    padding: 16px 20px;
+    padding: 12px 20px;
     font-size: 15px;
     background-color:rgb(3, 3, 3);
     color: white;
     border-radius: 23px;
     box-shadow: 0 0 2px 1px #323232;
+    transition: background-color 0.2s, transform 0.2s;
 }
 .btn-download:hover{
+    background-color:#0082e6 ;
     color: white;
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
+    
 }
 #cols{
   background: #0082e6;
@@ -275,12 +280,12 @@ transform: scale(1.1);
     padding: 9px 8px;
 }
 #cols:hover{
-box-shadow: 0 0 4px 1px black;
+box-shadow: 0 0 5px 2px black;
 }
 .check{
     animation: transitionIn 1s;
 }
-#about{
+.about{
     animation: transitionIn 1s;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -422,7 +427,7 @@ box-shadow: 0 0 4px 1px black;
     text-align: center;
     align-self: center;
 }
-#services{
+.services{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     animation:  transitionIn 2s ease-in-out;
@@ -437,7 +442,7 @@ box-shadow: 0 0 4px 1px black;
     gap: 30px;
 
 }
-#services span{
+.services span{
     color: #0082e6;
   
 }
@@ -496,7 +501,7 @@ box-shadow: 0 0 4px 1px black;
     box-shadow: 0 0 6px 1px #323232;
     transition: all 0.3s ease-in-out;
 }
-#contacts{
+.contacts{
     display: flex;
     width: 100%;
     height: 100vh;
@@ -516,7 +521,7 @@ box-shadow: 0 0 4px 1px black;
 
     }
 }
-#contacts>div{
+.contacts>div{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -638,7 +643,28 @@ form button:hover{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
 }
+.quest ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.quest ul li{
+    width: 200px;
+    height: 200px;
+    background-color: #0082e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 0 8px 1px #323232;
+}
+
 .quest h3{
     cursor: pointer;
 }
@@ -667,6 +693,16 @@ form button:hover{
         transform: translateY(0);
 
     }
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 @media (max-width:1000px) {
 
@@ -701,7 +737,7 @@ form button:hover{
         align-items: center;
         height: 60px;
     }
-    #contacts{
+    .contacts{
         gap: 80px;
         display: flex;
 
@@ -710,7 +746,7 @@ form button:hover{
         height: auto;
         width: auto;
     }
-    #about{
+    .about{
     display: flex;
      flex-direction: column;
      align-items: center;
@@ -735,11 +771,11 @@ form button:hover{
         width: 100%;
         font-size: 24px;
     }
-    #services{
-        height: 115vh;
+    .services{
+        min-height: 100vh;
         margin-top: 10px;
     }
-    #services h1{
+    .services h1{
         font-size: 24px;
     }
     .parent >div{
@@ -754,7 +790,7 @@ form button:hover{
         margin-right:40px ;
         margin-left:-25px ;
     }
-    #contacts{
+    .contacts{
         display: flex;
         width: 100%;
         height: 100vh;
@@ -814,14 +850,28 @@ form button:hover{
         border-radius: 9px;
         width: 80%;
     }
-    .build p{
-        font-size: 15px;
+    #whole p{
+        font-size: 16px;
+    }
+    .about p{
+        font-size: 16px;
+    }
+    .services p{
+        font-size: 16px;
+    }
+    
+    .build{
+        margin-top: -20px;
+        font-size: 16px
+    }
+    .para{
+        margin-top: -20px;
     }
     .parent>div:hover{
         margin-top: 0;
         box-shadow: 0 0 8px 1px #323232;
     }
-    #contacts{
+    .contacts{
         display: flex;
         width: 100%;
         height: 100vh;
@@ -835,29 +885,39 @@ form button:hover{
         margin-left: -50px;
     }
     .link{
-        overflow: hidden;
         position: fixed;
         display: flex;
+        top: 0;
+        right: 0;
         flex-direction:column;
-        justify-items: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 250px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 300px;
+        height: 100vh;
         display: none;
-        animation: transitionIn .3s ease-in;
+        animation: dog .3s ease-in;
         z-index: 999;
-        backdrop-filter: blur(7px);
-        background: rgb(255, 255, 255); 
+        background-color: #fff; 
+        box-shadow: -10px 0 10px rgb(0, 0, 0, 0.2);
+        gap: 20px;
+        margin-right: -0.0001px;
     }
     @keyframes dog {
         0%{
-            -webkit-transform:translateY(-500px);
-            transform:translateY(-500px);
+            -webkit-transform:translateX(250px);
+            transform:translateX(250px);
         }
         100%{
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
         }
+    }
+    .ri-close-line{
+        display: flex;
+        font-size: 2.5rem;
+        width: 100%;
+        margin-left: 16rem;
+        cursor: pointer;
     }
     .link ul{
         overflow: hidden;
@@ -917,9 +977,9 @@ form button:hover{
         width: 270px;
         height: 270px;
 
-        margin-top: -25px;
+        margin-top: -19px;
     }
-    #about{
+    .about{
         min-height: 100vh;
         width: 100%;
         display: flex;
@@ -997,32 +1057,32 @@ form button:hover{
     .ikon{
         font-size: 40px;
     }
-    #services{
-        height: 110vh;
-        margin-top: 60px;
+    .services{
+        min-height: 100vh;
+        margin-top: 52px;
         display: flex;
-        gap: 30px;
+        gap: 20px;
     }
-    #services>div{
+    .services>div{
         gap: 20px;
         display: flex;
     }
-    #services h1{
-        margin-bottom: 30px;
+    .services h1{
+        margin-bottom: 10px;
         font-size: 20px;
     }
     .web-under{
-        font-size: 17px;
+        font-size: 16px;
     }
     .web{
-        font-size: 17px;
+        font-size: 16px;
     }
     .ui-under{
-        font-size: 17px;
+        font-size: 16px;
     }
-    #contacts{
+    .contacts{
 
-        height: 45vh;
+        min-height: 100vh;
         gap: 10px;
         display: flex;
         flex-direction: column;
@@ -1055,7 +1115,7 @@ form button:hover{
         width: 71%;
     }
     .my-info p{
-        font-size: 19px;
+        font-size: 16px;
         text-align: center;
     }
     form{
@@ -1114,6 +1174,7 @@ form button:hover{
     .fa{
         width: 100%;
         display: flex;
+        min-height: 100vh;
         justify-content: center;
         align-content: center;
         flex-direction: column;
