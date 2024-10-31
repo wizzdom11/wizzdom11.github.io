@@ -16,7 +16,8 @@ const Hidd = document.querySelectorAll('.hiadde');
 const Butt = document.querySelectorAll('.ope');
 let hea = document.querySelectorAll('.great');
 let para = document.querySelectorAll('.par');
-const cancel = document.querySelector('.ri-close-line')
+const cancel = document.querySelector('.ri-close-line');
+const dark = document.querySelector('.ri-toggle-line');
 goOn.style.display= 'none';
 
 // document.addEventListener('DOMContentLoaded', function(){
@@ -56,12 +57,26 @@ function reveal(){
     }}
 
 toggle.addEventListener('click', (e)=>{
-        droplink.style.display = 'flex';
+        droplink.classList.toggle('active')
         console.log('good')
     })
     cancel.addEventListener('click', (e)=>{
-        droplink.style.display ='none'
+        droplink.classList.toggle('active')
     })
+    dark.addEventListener('click', (e)=> {
+        document.body.classList.toggle('dark-theme');
+        if (dark.classList.contains('ri-toggle-line')){
+                dark.classList.replace('ri-toggle-line', 'ri-toggle-fill');
+        }else{
+                dark.classList.replace('ri-toggle-fill', 'ri-toggle-line')
+        }
+        
+        // if(document.body.classList.contains('dark-theme'))
+        // {
+        // }else{
+        //         dark='.ri-toggle-line';
+        // }
+    });
 //     MAN.classList.toggle('active');
 //     toggle.classList.toggle('ri-close-line');
 //     droplink.style.display =(droplink.style.display==='block') ? 'none': 'block' ; 
