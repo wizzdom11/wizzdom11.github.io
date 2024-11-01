@@ -168,7 +168,7 @@ a:hover{
 }
 .words{
     text-align: center;
-    font-size: 19px;
+    font-size: 16px;
 }
 .para{
     overflow: hidden;
@@ -319,7 +319,6 @@ box-shadow: 0 0 8px 2px #0b27ca;
 }
 #cols{
   background: #0082e6;
-  color: var(--primary-color);
   border: none;
   box-shadow: 0 0 4px 1px #0f40c9;
  
@@ -327,7 +326,7 @@ box-shadow: 0 0 8px 2px #0b27ca;
 #cols .red{
     font-size: 14px;
     padding: 9px 8px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 #cols:hover{
@@ -464,7 +463,7 @@ color: var(--secondary-color);
 }
 .next p{
     margin-top: 15px;
-    font-size: 17px;
+    font-size: 16px;
 }
 .next span{
     color: #0082e6;
@@ -517,6 +516,9 @@ color: var(--secondary-color);
     justify-content: center;
     align-items: center;
     animation: par 2s ease-in-out;
+    font-size: 16px;
+}
+.parent p{
     font-size: 16px;
 }
 @keyframes par{
@@ -817,9 +819,6 @@ form .inputBox{
         align-items: end;
         margin-right: -2rem;
     }
-    .animated-text{
-        margin-top: -10px;
-    }
     .link a{
         font-size: 17px;
         font-weight: 500;
@@ -840,6 +839,9 @@ form .inputBox{
     }
     .words .para{
           margin-bottom: -40px;
+    }
+    .words{
+        margin-top: 60px;
     }
     .nav{
         justify-content: space-between;
@@ -931,10 +933,13 @@ form .inputBox{
     form h2{
         font-size: 24px;
     }
-    form{
+    form {
         width: 80%;
-        padding-bottom: 30px;
-        padding-top: 15px;
+        padding-bottom: 60px;
+        padding-top: px;
+    }
+    .rights h2{
+        padding-top: 20px;
     }
     .my-info p{
         font-size: 16px;
