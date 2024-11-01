@@ -491,12 +491,8 @@ color: var(--secondary-color);
     align-self: center;
 }
 .services{
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation:  transitionIn 2s ease-in-out;
-    animation-direction: alternate;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -513,7 +509,7 @@ color: var(--secondary-color);
     font-size: 60px;
 }
 .parent{
-    margin-top: 20px;
+    margin-top: 2px;
     display: flex;
     gap: 10px;
     /* height: 100vh;
@@ -521,6 +517,7 @@ color: var(--secondary-color);
     justify-content: center;
     align-items: center;
     animation: par 2s ease-in-out;
+    font-size: 16px;
 }
 @keyframes par{
     0%{
@@ -838,8 +835,8 @@ form .inputBox{
     .build p{
         font-size: 16px;
     }
-    .para{
-        font-size: 16px;
+    .words .para{
+          margin-bottom: -40px;
     }
     .nav{
         justify-content: space-between;
@@ -859,13 +856,13 @@ form .inputBox{
     }
     .parent{
         flex-direction: column;
-        width: 100%;
     }
     .web{
         width: 400px;
     }
     .about{
-    display: flex;
+      min-height: 100vh;
+      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
@@ -877,9 +874,10 @@ form .inputBox{
         width: 300px;
         height: 320px;
         display: flex;
-        justify-self: end;
-        align-self: self-end;
+        justify-self:center;
+        align-content: end;
         margin-top: 5px;
+        display: none;
     }
     .next h1{
         display: flex;
@@ -890,7 +888,10 @@ form .inputBox{
         font-size: 24px;
     }
     .services{
+        position: relative;
         min-height: 100vh;
+        width: 100%;
+        font-size: 16px;
     }
     .services h1{
         font-size: 24px;
@@ -902,6 +903,9 @@ form .inputBox{
         border-radius: 9px;
         position: relative;
         font-size: 16px;
+    }
+    .parent >div p{
+        font-size: 2px;
     }
 
     .next p, h4{
