@@ -817,6 +817,9 @@ form .inputBox{
         align-items: end;
         margin-right: -2rem;
     }
+    .animated-text{
+        margin-top: -10px;
+    }
     .link a{
         font-size: 17px;
         font-weight: 500;
@@ -902,10 +905,9 @@ form .inputBox{
         cursor: pointer;
         border-radius: 9px;
         position: relative;
-        font-size: 16px;
     }
     .parent >div p{
-        font-size: 2px;
+        font-size: 16px;
     }
 
     .next p, h4{
@@ -923,16 +925,16 @@ form .inputBox{
     }
     .rights{
         display: flex;
-        width: 68%;
-        height:80vh;
+        width: 70%;
+        height:83vh;
     }
     form h2{
         font-size: 24px;
     }
     form{
         width: 80%;
-        padding-bottom: 20px;
-        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-top: 15px;
     }
     .my-info p{
         font-size: 16px;
