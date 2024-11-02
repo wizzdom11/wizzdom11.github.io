@@ -56,12 +56,12 @@ function reveal(){
     
     }}
 
-toggle.addEventListener('click', (e)=>{
-        droplink.classList.toggle('active')
-        console.log('good')
+MAN.addEventListener('click', (e)=>{
+        droplink.classList.toggle('open');
+        console.log('good');
     })
     cancel.addEventListener('click', (e)=>{
-        droplink.classList.toggle('active')
+        droplink.classList.toggle('open');
     })
     dark.addEventListener('click', (e)=> {
         document.body.classList.toggle('dark-theme');

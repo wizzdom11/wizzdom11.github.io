@@ -28,7 +28,7 @@
 .dark-theme{
     --secondary-color: black;
     --primary-color: white;
-    --nav-color: rgba(255, 255, 255, 0);
+    --nav-color: rgba(12, 12, 12, 0.842);
 }
 .continue{
     color: var(--primary-color);
@@ -127,7 +127,6 @@ h3.logo{
     align-items: center;
     font-size: 40px;
     color: white;
-    cursor: pointer;
     display: none;
 }
 
@@ -375,6 +374,7 @@ color: var(--secondary-color);
     gap: 10px;
 }
 .contain{
+    position: relative;
     width: 200px;
     height: 200px;
     transform: rotate(45deg);
@@ -382,7 +382,7 @@ color: var(--secondary-color);
     border-radius: 20px;
     margin-left: 50px;
     animation: con 1.5s ease-in-out;
-    margin-top: -15rem;
+    margin-top: rem;
 }
 .continue{
     color: var(--primary-color);
@@ -533,7 +533,12 @@ color: var(--secondary-color);
     }
 }
 .parent >div{
-    width: auto;
+    width: 440px;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border:1px solid #0082e6;
     box-shadow: 0 0 2px 1px #0082e6;
     border-radius: 7px;
@@ -543,9 +548,7 @@ color: var(--secondary-color);
     
 }
 .parent>div:hover{
-    margin-top: -10px;
-    box-shadow: 0 0 8px 1px #0082e6;
-    transition: all .3s ease-in-out;
+   cursor: pointer;
 }
 .und button{
     padding: 9px 13px;
@@ -780,13 +783,18 @@ form .inputBox{
 .par.active{
  display: flex;
 }
-#tra{
+.tra{
+    min-height: 100vh;
+    width: 100%;
    
-   animation: transitionIn 1s;
+   /* animation: transitionIn 1s; */
+}
+.tra h2{
+ font-size: 30px;   
 }
 
 
-@keyframes transitionIn {
+/* @keyframes transitionIn {
     from{
        opacity: 0;
        transform: translateY(-10px);
@@ -796,7 +804,7 @@ form .inputBox{
         transform: translateY(0);
 
     }
-}
+} */
 .reveal{
     position: relative;
     transform: translateY(120px);
@@ -838,7 +846,7 @@ form .inputBox{
         font-size: 16px;
     }
     .words .para{
-          margin-bottom: -40px;
+          margin-bottom: -15px;
     }
     .words{
         margin-top: 60px;
@@ -861,9 +869,13 @@ form .inputBox{
     }
     .parent{
         flex-direction: column;
+        gap: 20px;
     }
     .web{
         width: 400px;
+        padding-bottom: 10px;
+        padding-left: 3px;
+        padding-right: 2px;
     }
     .about{
       min-height: 100vh;
@@ -903,6 +915,7 @@ form .inputBox{
     }
     .parent >div{
         width: 80%;
+        height: 39vh;
         border:1px solid #0082e6;
         cursor: pointer;
         border-radius: 9px;
@@ -928,15 +941,15 @@ form .inputBox{
     .rights{
         display: flex;
         width: 70%;
-        height:83vh;
+        height:90vh;
     }
     form h2{
         font-size: 24px;
     }
     form {
         width: 80%;
-        padding-bottom: 60px;
-        padding-top: px;
+        padding-bottom: 65px;
+        padding-top: 40px;
     }
     .rights h2{
         padding-top: 20px;
@@ -954,14 +967,19 @@ form .inputBox{
       font-size: 24px;
       text-align: center;
     }
-    #tra{
-        height: 130vh;
+    .tra{
+        min-height: 100vh;
+    }
+    .tra h2{
+        font-size: 24px;
     }
     .fuuter{
-        height: 40vh;
+        height: 50vh;
+        display: flex;
+        align-items: center;
     }
     .fuuter h2{
-        margin-top: 12px;
+        margin-top: 5px;
     }
     .cont{
         display: flex;
@@ -993,6 +1011,7 @@ form .inputBox{
     }
     .ri-toggle-fill{
         font-size:2rem ;
+        cursor: pointer;
     }
     @keyframes mave {
         0%{background-position: 0 0;}
@@ -1026,7 +1045,7 @@ form .inputBox{
         font-size: 16px
     }
     .para{
-        margin-top: -20px;
+        margin-top: -15px;
     }
     .parent>div:hover{
         margin-top: 0;
@@ -1056,22 +1075,28 @@ form .inputBox{
         width: 300px;
         height: 100vh;
         display: none;
-        animation: dog .3s ease-in;
+        animation: dog 0.3s ease-in;
         z-index: 999;
         background-color: var(--secondary-color);
         color: var(--primary-color); 
         box-shadow: -10px 0 10px rgb(0, 0, 0, 0.2);
         gap: 20px;
         margin-right: -0.0001px;
+        
     }
     @keyframes dog {
         0%{
-            -webkit-transform:translateX(250px);
-            transform:translateX(250px);
+            opacity: 0;
+        transform: translateX(250px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+            /* -webkit-transform:translateX(250px);
+            transform:translateX(250px); */
         }
         100%{
-            -webkit-transform: translateY(0);
+            opacity: 1;
             transform: translateY(0);
+            /* -webkit-transform: translateY(0);
+            transform: translateY(0); */
         }
     }
     .ri-close-line{
@@ -1106,6 +1131,7 @@ form .inputBox{
     }
     .words h2{
         font-size: 23px;
+        margin-top: -3px;
     }
     .toggle{
         display: flex;
@@ -1118,13 +1144,31 @@ form .inputBox{
 
     }
     .ri-menu-fill{
-        display: flex;
+        cursor: pointer;
     }
     .ri-menu-fill.active{
         display: none;
     }
-    .link.active{
+    .link.open{
         display: flex;
+    
+    }
+    .op{
+      animation: piyy 0.3s ease-in-out;
+    }
+
+    @keyframes piyy {
+        0%{ 
+            opacity: 1;
+        transform: translateY(0px);
+
+        }
+        100%{
+            opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ea
+
+        }
     }
     .drop-down{
         position: fixed;
@@ -1233,7 +1277,7 @@ form .inputBox{
         display: flex;
     }
     .services h1{
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         font-size: 20px;
     }
     form{
@@ -1362,8 +1406,8 @@ form .inputBox{
         gap: 25px;
         margin-top: 0px;
     }
-    #tra{
-        height: 100vh;
+    .tra{
+        min-height: 100vh;
         width: 100%;
         
     }
