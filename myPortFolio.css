@@ -916,7 +916,7 @@ form .inputBox{
     }
     .parent >div{
         width: 80%;
-        height: 350px;
+        height: auto;
         border:1px solid #0082e6;
         cursor: pointer;
         border-radius: 9px;
@@ -924,6 +924,7 @@ form .inputBox{
     }
     .parent >div p{
         font-size: 16px;
+        padding: 20px;
     }
 
     .next p, h4{
@@ -1260,6 +1261,9 @@ form .inputBox{
     .parent>div{
         width: 93%;
     }
+    .parent >div P{
+        padding: 0px;
+    }
     .parent>div:hover{
         margin-top: -5px;
         box-shadow: 0 0 8px 1px #0082e6;
@@ -1272,7 +1276,7 @@ form .inputBox{
         min-height: 100vh;
         margin-top: 52px;
         display: flex;
-        gap: 50px;
+        gap: 70px;
     }
     .services>div{
         gap: 20px;
