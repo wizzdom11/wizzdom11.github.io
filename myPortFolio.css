@@ -460,6 +460,7 @@ color: var(--secondary-color);
 }
 .next h1{
     text-align: center;
+    margin-bottom: -2rem;
 }
 .next p{
     margin-top: 15px;
@@ -915,7 +916,7 @@ form .inputBox{
     }
     .parent >div{
         width: 80%;
-        height: 39vh;
+        height: 350px;
         border:1px solid #0082e6;
         cursor: pointer;
         border-radius: 9px;
@@ -1251,6 +1252,7 @@ form .inputBox{
         width: 100%;
         justify-content: center;
         margin-left: 0;
+        margin-bottom: -1.5rem;
     }
     .parent h2{
         font-size: 20px;
@@ -1270,7 +1272,7 @@ form .inputBox{
         min-height: 100vh;
         margin-top: 52px;
         display: flex;
-        gap: 20px;
+        gap: 50px;
     }
     .services>div{
         gap: 20px;
