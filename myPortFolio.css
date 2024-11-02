@@ -1276,7 +1276,7 @@ form .inputBox{
         min-height: 100vh;
         margin-top: 52px;
         display: flex;
-        gap: 70px;
+        gap: 20px;
     }
     .services>div{
         gap: 20px;
