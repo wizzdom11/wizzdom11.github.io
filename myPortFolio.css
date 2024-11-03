@@ -148,8 +148,8 @@ a:hover{
 }
 #whole{
     /* background-image: url("./getInTouchThree.png"); */
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
     animation: mave 4s linear infinite;
     animation-direction: alternate;
     display:flex;
@@ -1068,6 +1068,7 @@ form .inputBox{
 @media(max-width:763px) {
     .nav{
         height: 7vh;
+        width: 100%;
     }
     .nav h3{
         font-size: 30px;
@@ -1080,11 +1081,11 @@ form .inputBox{
         font-size:2rem ;
         cursor: pointer;
     }
-    @keyframes mave {
+    /* @keyframes mave {
         0%{background-position: 0 0;}
         100%{background-position: -150px 0;}
         
-    }
+    } */
     /* .two{
         width: 450px;
         height: 450px;
@@ -1130,9 +1131,6 @@ form .inputBox{
     }
     .para{
         margin-top: -15px;
-    }
-    .parent>div:hover{
-    
     }
     .contactser{
         display: flex;
@@ -1189,11 +1187,11 @@ form .inputBox{
         margin-left: 16rem;
         cursor: pointer;
     }
-    .pic{
-         width: 50px;
+    /* .pic{
+        width: 50px;
         height: 300px;
         top: -15px;
-    }
+    } */
     .link ul{
         overflow: hidden;
         display: flex;
@@ -1292,10 +1290,10 @@ form .inputBox{
         justify-self: center;
 
     }
-    .pic img{
+    /* .pic img{
         height: 300px;
         width: 300px;
-    }
+    } */
             
     .next p, h4{
         margin-right:0 ;
