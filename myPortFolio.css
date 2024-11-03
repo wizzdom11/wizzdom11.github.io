@@ -40,14 +40,8 @@
     font-size: 2.5rem;
 }
 body{
-    
-    width: 100%;
-    height: 100vh;
-    background-size: 100% 100%;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-
-
 }
 .c{
     color:#0a0041ee ;
@@ -1081,11 +1075,11 @@ form .inputBox{
         font-size:2rem ;
         cursor: pointer;
     }
-    /* @keyframes mave {
+    @keyframes mave {
         0%{background-position: 0 0;}
         100%{background-position: -150px 0;}
         
-    } */
+    }
     /* .two{
         width: 450px;
         height: 450px;
@@ -1187,11 +1181,11 @@ form .inputBox{
         margin-left: 16rem;
         cursor: pointer;
     }
-    /* .pic{
-        width: 50px;
+    .pic{
+         width: 50px;
         height: 300px;
         top: -15px;
-    } */
+    }
     .link ul{
         overflow: hidden;
         display: flex;
@@ -1290,10 +1284,10 @@ form .inputBox{
         justify-self: center;
 
     }
-    /* .pic img{
+    .pic img{
         height: 300px;
         width: 300px;
-    } */
+    }
             
     .next p, h4{
         margin-right:0 ;
