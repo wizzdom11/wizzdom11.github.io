@@ -31,7 +31,7 @@
     --secondary-color: black;
     --primary-color:#bdb2b2d7;
     --nav-color: rgba(12, 12, 12, 0.842);
-    --services-color:linear-gradient(transparent, transparent, #050118d3, #050118d3)
+    --services-color:linear-gradient(transparent, transparent, #0a0041ee , #0a0041ee )
 }
 .continue{
     color: var(--primary-color);
@@ -48,6 +48,9 @@ body{
     color: var(--primary-color);
 
 
+}
+.c{
+    color:#0a0041ee ;
 }
 nav{
     position: relative;
@@ -884,10 +887,17 @@ form .inputBox{
         border-radius: 50%;
 
     }
-    /* .pic img{
-        height: 310px;
-        width: 310px;
-    } */
+    .two .pic{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative;
+        background: var(--secondary-color);
+        overflow: hidden;
+        z-index: 1;
+    }
     .words h1{
         font-size: 25px;
     }
@@ -1071,11 +1081,24 @@ form .inputBox{
         
     }
     .two{
-        width: 70vw;
-        height: 70vw;
+        width: 450px;
+        height: 450px;
         overflow: hidden;
+      
         border-radius: 50%;
         top: -10px;
+    }
+    .two.pic{
+        margin-top:-95px;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+
+    }
+    .pic img{
+        height: 100%;
+        width: 100%;  
     }
     .parent{
         height: 100vh;
