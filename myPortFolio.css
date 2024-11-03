@@ -271,18 +271,28 @@ a:hover{
     width: 500px;
     height: 500px;
     background:conic-gradient(transparent, transparent, transparent, #0082e6);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-animation: rotateborder 10s linear infinite;
     animation: rotateborder 10s linear infinite;
 
 }
 @keyframes rotateborder{
     100%{
         transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+
+    }
+}
+@keyframes rotateborder{
+    100%{
+        transform: rotate(360deg);
+
     }
 }
 .two::after{
 
     animation-delay: -5s;
+    -webkit-animation-delay: -5s;
 }
 .two .pic{
     display: flex;
@@ -1081,15 +1091,15 @@ form .inputBox{
         
     }
     .two{
-        width: 450px;
-        height: 450px;
+        width: 360px;
+        height: 360px;
         overflow: hidden;
       
         border-radius: 50%;
         top: -10px;
     }
     .two.pic{
-        margin-top:-95px;
+        margin-top:-70px;
         height: 100%;
         width: 100%;
         border-radius: 50%;
