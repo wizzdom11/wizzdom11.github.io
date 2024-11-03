@@ -148,7 +148,7 @@ a:hover{
 }
 #whole{
     /* background-image: url("./getInTouchThree.png"); */
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     background-repeat: no-repeat;
     animation: mave 4s linear infinite;
     animation-direction: alternate;
@@ -162,9 +162,6 @@ a:hover{
     /* box-shadow: 1px 1px 40px 2px #0082e6; */
     outline: none;
     background: var(--services-color);
-
-
-    
 
 }
 .show{
