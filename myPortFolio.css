@@ -879,8 +879,10 @@ form .inputBox{
     
     }
     .two{
-        width: 100vw;
-        height: 45vw;
+        width: 99vw;
+        height: 43vw;
+        border-radius: 50%;
+
     }
     /* .pic img{
         height: 310px;
@@ -1069,8 +1071,11 @@ form .inputBox{
         
     }
     .two{
-        width: 50vw;
-        height: 50vw;
+        width: 70vw;
+        height: 70vw;
+        overflow: hidden;
+        border-radius: 50%;
+        top: -10px;
     }
     .parent{
         height: 100vh;
