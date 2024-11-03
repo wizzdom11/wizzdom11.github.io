@@ -9,9 +9,11 @@
     font-family: 'poppins', sans-serif;
 }
 :root{
-    --secondary-color: white;
+    --secondary-color: #ffffff;
     --primary-color:black;
     --nav-color: rgba(255, 255, 255, 0.678);
+    --gradient-color: linear-gradient(135deg, #0072ff, #00c6ff);
+     --services-color: linear-gradient(transparent, transparent, transparent, #b3a9a9e0)
 }
 #read{
     background-color: var(--primary-color);
@@ -27,8 +29,9 @@
 }
 .dark-theme{
     --secondary-color: black;
-    --primary-color: white;
+    --primary-color:#bdb2b2d7;
     --nav-color: rgba(12, 12, 12, 0.842);
+    --services-color:linear-gradient(transparent, transparent, #050118d3, #050118d3)
 }
 .continue{
     color: var(--primary-color);
@@ -74,6 +77,7 @@ nav{
 }
 .hide{
     opacity: 0;
+    color: #b3a9a9e0;
 }
 .smooth{
     animation: nav 1s ease-in-out ;
@@ -106,7 +110,7 @@ h3.logo{
 }
 .link a:hover,
 .link a.active{
-    color: #0082e6;
+   color: #0082e6;
 }
 
 .link ul{
@@ -140,8 +144,8 @@ a:hover{
     text-decoration: dotted;
 }
 #whole{
-    background-image: url("./getInTouchThree.png");
-    background-size: 100% 100%;
+    /* background-image: url("./getInTouchThree.png");
+    background-size: 100% 100%; */
     background-repeat: no-repeat;
     animation: mave 4s linear infinite;
     animation-direction: alternate;
@@ -151,8 +155,13 @@ a:hover{
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    gap: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 20px;
+    /* box-shadow: 1px 1px 40px 2px #0082e6; */
+    outline: none;
+    background: var(--services-color);
+
+
+    
 
 }
 .show{
@@ -162,7 +171,7 @@ a:hover{
 }
 @keyframes mave {
     0%{background-position: 0 0;}
-    100%{background-position: -300px 0;}
+    100%{background-position: -200px 0;}
     
 }
 .words{
@@ -202,10 +211,6 @@ a:hover{
        transform: translateX(0);
     }
 } */
-.words mark{
-    background:none;
-    color: blue;
-}
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -235,23 +240,57 @@ a:hover{
 .animated-text:nth-child(9) { animation-delay: 1.5s; }
 
 .pic img{
-    overflow: hidden;
-    height: 390px;
-    width: 390px;
-    border-radius: 100%;
-    margin-left: 15px;
-    animation: fadeIn 1s ease-in-out;
-    border: 10px solid #0082e6;
-    animation-direction: alternate;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    /* height: 390px;
+    width: 390px; */
+    /* border-radius: 100%;
+    margin-left: 15px; */
+    /* border: 10px solid; */
 }
-@keyframes spread {
-    0%{box-shadow: 0 0 0px 0px #0082e6;}
-    20%{box-shadow: 0 0 7px 6px #0082e6;}
-    40%{box-shadow: 0 0 10px 7px #0082e6;}
-    60%{box-shadow: 0 0 13px 8px #0082e6;}
-    80%{box-shadow: 0 0 16px 9px #0082e6;}
-    100%{box-shadow: 0 0 20px 10px #0082e6;}
-    
+.two{
+    width: 50vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.two::before, 
+.two::after{
+    content:'';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background:conic-gradient(transparent, transparent, transparent, #0082e6);
+    transform: rotate(0deg);
+    animation: rotateborder 10s linear infinite;
+
+}
+@keyframes rotateborder{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.two::after{
+
+    animation-delay: -5s;
+}
+.two .pic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    background: var(--secondary-color);
+    overflow: hidden;
+    z-index: 1;
 }
 .check{
     display: flex;
@@ -293,7 +332,6 @@ a:hover{
      background-color: #0082e6;
     cursor: pointer;
      box-shadow: 0 0 4px 1px #323232;
-     transition: background-color 0.2s, transform 0.2s;
      
 }
 .btn button:hover{
@@ -309,17 +347,19 @@ box-shadow: 0 0 8px 2px #0b27ca;
     color: var(--secondary-color);
     border-radius: 23px;
     box-shadow: 0 0 2px 1px #323232;
-    transition: background-color 0.2s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s;
+
 }
 .btn-download:hover{
-    background-color:#0082e6 ;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
     color: var(--primary-color);
+    
     
 }
 #cols{
-  background: #0082e6;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
   border: none;
-  box-shadow: 0 0 4px 1px #0f40c9;
+  box-shadow: 0 0 2px 1px #323232;
  
 }
 #cols .red{
@@ -331,6 +371,7 @@ box-shadow: 0 0 8px 2px #0b27ca;
 #cols:hover{
 box-shadow: 0 0 5px 2px black;
 color: var(--secondary-color);
+transform: scale(1.05);
 }
 .check{
     animation: transitionIn 1s;
@@ -347,7 +388,8 @@ color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* box-shadow: 2px 0px 40px 2px #323232; */
+    
 }
 .Dd{
     margin-top: 3rem;
@@ -467,7 +509,7 @@ color: var(--secondary-color);
     font-size: 16px;
 }
 .next span{
-    color: #0082e6;
+   color: var(--primary-color);
 }
 .next button{
     margin-top: 10px;
@@ -502,7 +544,7 @@ color: var(--secondary-color);
 
 }
 .services span{
-    color: #0082e6;
+    color: var(--primary-color);
   
 }
 .ikon{
@@ -540,9 +582,10 @@ color: var(--secondary-color);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border:1px solid #0082e6;
-    box-shadow: 0 0 2px 1px #0082e6;
-    border-radius: 7px;
+    /* border:1px solid #0082e6; */
+    /* box-shadow: 0 0 2px 1px #0082e6; */
+    border-radius: 30px;
+    background:var(--services-color);
 }
  .hiadde{
     display: none;
@@ -787,11 +830,13 @@ form .inputBox{
 .tra{
     min-height: 100vh;
     width: 100%;
+    background: var(--services-color);
    
    /* animation: transitionIn 1s; */
 }
 .tra h2{
  font-size: 30px;   
+ color: var(--primary-color);
 }
 
 
@@ -833,10 +878,14 @@ form .inputBox{
         font-weight: 500;
     
     }
-    .pic img{
+    .two{
+        width: 100vw;
+        height: 45vw;
+    }
+    /* .pic img{
         height: 310px;
         width: 310px;
-    }
+    } */
     .words h1{
         font-size: 25px;
     }
@@ -917,7 +966,6 @@ form .inputBox{
     .parent >div{
         width: 80%;
         height: auto;
-        border:1px solid #0082e6;
         cursor: pointer;
         border-radius: 9px;
         position: relative;
@@ -1020,6 +1068,10 @@ form .inputBox{
         100%{background-position: -150px 0;}
         
     }
+    .two{
+        width: 50vw;
+        height: 50vw;
+    }
     .parent{
         height: 100vh;
         flex-direction: column;
@@ -1027,9 +1079,9 @@ form .inputBox{
     }
     .parent >div{
         width: auto;
-        border:1px solid #0082e6;
         cursor: pointer;
-        border-radius: 9px;
+        border: none;
+        border-radius: 20px;
         width: 80%;
     }
     #whole p{
@@ -1056,7 +1108,7 @@ form .inputBox{
     .contactser{
         display: flex;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -1183,12 +1235,6 @@ form .inputBox{
         min-height: 100vh;
         width: 100%;
         
-    }
-    .pic img{
-        width: 270px;
-        height: 270px;
-
-        margin-top: -19px;
     }
     .about{
         min-height: 100vh;
