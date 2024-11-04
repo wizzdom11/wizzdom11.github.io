@@ -6,7 +6,7 @@
 }
 body{
     font-family: sans-serif;
-    background-image: url(./tech.jpg);
+    background:  linear-gradient(135deg, #1B1F3B, #3C2A4D, #0A0A0A);
     background-size: cover;
     height: 97vh;
 }
