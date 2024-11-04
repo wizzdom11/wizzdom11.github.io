@@ -1290,7 +1290,10 @@ form .inputBox{
     .pic img{
         height: 290px;
         width: 290px;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
+    }
+    .pic{
+        margin-bottom: -29px;
     }
             
     .next p, h4{
