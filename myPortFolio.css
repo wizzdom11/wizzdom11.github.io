@@ -1077,16 +1077,19 @@ form .inputBox{
       text-align: center;
     }
     .tra{
-        gap: 10px;
         min-height: 100vh;
     }
     .tra h2{
         font-size: 24px;
     }
+    .image-link{
+        width: 500px;
+    }
     .fuuter{
         height: 50vh;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     .fuuter h2{
         margin-top: 5px;
@@ -1096,7 +1099,7 @@ form .inputBox{
         flex-direction: column;
     }
     .fa{
-        margin-top: 65px;
+        margin-top: px;
     }
     .ahh{
         display: flex;
@@ -1199,7 +1202,7 @@ form .inputBox{
         width: 300px;
         height: 100vh;
         display: none;
-        animation: dog 0.3s ease-in;
+        animation: dog 0.3s ease-in-out;
         z-index: 999;
         background-color: var(--secondary-color);
         color: var(--primary-color); 
@@ -1211,13 +1214,13 @@ form .inputBox{
     @keyframes dog {
         0%{
             -webkit-transform:translateX(250px);
-            transform:translateX(250px);
+            /* transform:translateX(250px); */
         }
         100%{
             /* opacity: 1;
             transform: translateY(0); */
             -webkit-transform: translateY(0);
-            transform: translateY(0);
+            /* transform: translateY(0); */
         }
     }
     .ri-close-line{
@@ -1533,11 +1536,15 @@ form .inputBox{
         justify-content: center;
         align-content: center;
         flex-direction: column;
-        margin-top: 0px;
+        margin-top: -7px;
         gap: 20px;
+        text-align: center;
+    }
+    .fa p{
+        font-size: 16px;
     }
     .image-link{
-        width: 400px;
+        width: 380px;
     }
     .tra{
         gap: 70px;
