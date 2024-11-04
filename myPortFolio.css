@@ -144,7 +144,7 @@ a:hover{
     /* background-image: url("./getInTouchThree.png"); */
     /* background-size: 100% 100%; */
     /* background-repeat: no-repeat; */
-    animation: mave 4s linear infinite;
+    /* animation: mave 4s linear infinite; */
     animation-direction: alternate;
     display:flex;
     flex-direction: row;
@@ -1284,9 +1284,13 @@ form .inputBox{
         justify-self: center;
 
     }
+    .pic{
+        width: auto;
+    }
     .pic img{
-        height: 250px;
-        width: 250px;
+        height: 290px;
+        width: 290px;
+        margin-bottom: 70px;
     }
             
     .next p, h4{
