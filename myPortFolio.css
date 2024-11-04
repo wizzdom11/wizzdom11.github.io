@@ -1085,6 +1085,9 @@ form .inputBox{
     .image-link{
         width: 500px;
     }
+    .quest{
+        padding-bottom:60px ;
+    }
     .fuuter{
         height: 50vh;
         display: flex;
