@@ -166,11 +166,11 @@ a:hover{
     gap: 20px;
     /* box-shadow: 1px 1px 40px 2px #0082e6; */
     outline: none;
-    /* background: var(--whole-color); */
+    /* background: var(--whole-color); */   
 
-
-    
-
+}
+#whole p{
+    font-size: 16px;
 }
 .show{
     opacity: 1;
@@ -402,6 +402,9 @@ transform: scale(1.05);
     /* box-shadow: 2px 0px 40px 2px #323232; */
     
 }
+.about p{
+    font-size: 16px;
+}
 .Dd{
     margin-top: 3rem;
     animation: transitionIn 1.5s;
@@ -559,6 +562,9 @@ transform: scale(1.05);
 .services span{
     color: var(--primary-color);
   
+}
+.services p{
+    font-size: 16px;
 }
 .ikon{
     font-size: 60px;
@@ -931,23 +937,9 @@ form .inputBox{
         font-weight: 500;
     
     }
-    /* .two{
-        width: 99vw;
-        height: 43vw;
-        border-radius: 50%;
-
+    #whole p{
+        font-size: 16px;
     }
-    .two .pic{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        position: relative;
-        background: var(--secondary-color);
-        overflow: hidden;
-        z-index: 1;
-    } */
      .pic{
         height: 270px;
         width: 900px;
@@ -1039,6 +1031,9 @@ form .inputBox{
         cursor: pointer;
         border-radius: 9px;
         position: relative;
+    }
+    .about p{
+        font-size: 16px;
     }
     .parent >div p{
         font-size: 16px;
