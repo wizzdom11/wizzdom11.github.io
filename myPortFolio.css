@@ -9,6 +9,8 @@
     font-family: 'poppins', sans-serif;
 }
 :root{
+    --whole-color: linear-gradient(135deg, #FFFFFF, #F0F0F0, #E8E8E8);
+    --form-color: linear-gradient(135deg, #FFFFFF, #F0F0F0, #E8E8E8);
     --secondary-color: #ffffff;
     --primary-color:black;
     --nav-color: white;
@@ -28,10 +30,13 @@
     margin-left: 6px;
 }
 .dark-theme{
+    --form-color:rgba(12, 12, 12, 0.747);
     --secondary-color: black;
     --primary-color:#bdb2b2d7;
     --nav-color: rgba(12, 12, 12, 0.842);
     --services-color: linear-gradient(135deg, #1B1F3B, #3C2A4D, #0A0A0A);
+    --whole-color: black;
+    transition: all 0.2s ease-in-out;
     
     /* linear-gradient(transparent, transparent, #0a0041ee , #0a0041ee ) */
 }
@@ -40,6 +45,7 @@
 }
 .ri-toggle-fill{
     font-size: 2.5rem;
+    cursor: pointer;
 }
 body{
     background-color: var(--secondary-color);
@@ -143,7 +149,10 @@ a:hover{
     text-decoration: dotted;
 }
 #whole{
-    /* background-image: url("./getInTouchThree.png"); */
+    background-image: url("./5631533.jpg");
+    background-size: cover;
+    background-color: var(--nav-color) ;
+    background-blend-mode: multiply;
     /* background-size: 100% 100%; */
     /* background-repeat: no-repeat; */
     /* animation: mave 4s linear infinite; */
@@ -157,7 +166,7 @@ a:hover{
     gap: 20px;
     /* box-shadow: 1px 1px 40px 2px #0082e6; */
     outline: none;
-    background: var(--services-color);
+    /* background: var(--whole-color); */
 
 
     
@@ -380,14 +389,16 @@ transform: scale(1.05);
     color: var(--primary-color);
 }
 .about{
-    background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
+     background-repeat: no-repeat;
+     /* background-size: 100% 100%;  */
     /* animation-direction: alternate; */
+    background-size: cover;
     min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary-color);
     /* box-shadow: 2px 0px 40px 2px #323232; */
     
 }
@@ -666,11 +677,11 @@ h1 span{
     width: 40%;
     gap:15px;
     margin-bottom: 100px;
-    border-radius: 8px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
-    background-color: var(--nav-color);
-    border: 1px solid var(--primary-color);
+    background: var(--form-color);
+    border: none;
     
 }
 .rights p{
@@ -699,7 +710,7 @@ form input, textarea{
     color: var(--primary-color);
     outline: none;
     border-bottom: 2px solid var(--primary-color);
-    border-left: 1px solid var(--primary-color);
+    border-left: 1px solid var(--form-color);
     resize: none;
 }
 form ::placeholder{
