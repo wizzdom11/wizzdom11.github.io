@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transparent Me</title>
     <link rel="stylesheet" href="./transaparent.css">
+    <link rel="stylesheet" 
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     
@@ -27,21 +30,57 @@
     <div id="form">
         
         <div class="login">
-            <h4>Log In To Your Account</h4>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <button>sign in</button>
+            <h2>Login</h2>
+
+            <div class="us">
+                 <input type="text" placeholder="Username" required> <i class="ri-user-line"></i>
+            </div>
+            <div class="us">
+            <input type="password" id="password" placeholder="Password" required> <i class="ri-eye-off-line"></i>
+            </div>
+           
+            
             <div class="suggestion">
                 <div class="remember">
-                    <input type="checkbox" checked>
-                    <span>Remember me</span>
+                    <label><input type="checkbox" checked>Remember me</label>
                 </div>
                 <div class="forgot">
                     <span>Forgot Password?</span>
                 </div>
-
+               
             </div>
+             <button>sign in</button>
+            <div class="register">
+                    <p>Don't have an account? <a href="">Register</a></p>
+                    
+                </div>
+
         </div>
     </div> 
+    <script>
+
+        let touch = document.querySelector('.ri-eye-off-line');
+        let passwordIn = document.getElementById('password');
+
+        touch.addEventListener("click", (e)=> {
+    if (passwordIn.type === "password") {
+      passwordIn.type = "text";
+    //   toggleIcon.textContent = "🙈"; // Icon changes to "eye-slash" style
+    } else {
+      passwordIn.type = "password";
+    //   toggleIcon.textContent = "👁️"; // Icon changes back to "eye" style
+    }
+
+    if (touch.classList.contains('ri-eye-off-line')){
+                touch.classList.replace('ri-eye-off-line', 'ri-eye-line');
+        }else{
+                touch.classList.replace('ri-eye-line', 'ri-eye-off-line');
+        }
+  });
+
+
+
+
+    </script>
 </body>
 </html>

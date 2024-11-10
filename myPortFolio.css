@@ -50,6 +50,10 @@
 body{
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    font-size: 16px;
+}
+h1, h4, h3{
+    text-transform: uppercase;
 }
 .c{
     color:#0a0041ee ;
@@ -932,6 +936,9 @@ form .inputBox{
         align-items: end;
         margin-right: -2rem;
     }
+    p{
+        font-size: 16px;
+    }
     .link a{
         font-size: 17px;
         font-weight: 500;
@@ -947,9 +954,12 @@ form .inputBox{
      .pic img{
         width: 100%;
      }
+     h1 {
+        font-size: 24px;
+     }
      
     .words h1{
-        font-size: 25px;
+        font-size: 24px;
     }
     .words h2{
         font-size: 24px;
@@ -1038,6 +1048,9 @@ form .inputBox{
     .parent >div p{
         font-size: 16px;
         padding: 20px;
+    }
+    .parent > div h2{
+        font-size: 22px;
     }
 
     .next p, h4{
@@ -1560,6 +1573,9 @@ form .inputBox{
         min-height: 100vh;
         width: 100%;
         
+    }
+    .tra h1{
+        font-size: 20px;
     }
     
     .ahh{
