@@ -104,7 +104,7 @@ div#form{
 }
 .us i{
     position: absolute;
-    right: 55px;
+    right: 40px;
     color: #fff;
 }
 .login h2{
@@ -116,10 +116,6 @@ div#form{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 10px;
 }
-.suggestion{
-    display: flex;
-    justify-content: space-between;
-}
 .login button {
     background-color: #d38a1c;
     color: white;
@@ -130,8 +126,7 @@ div#form{
 .suggestion{
     display: flex;
     align-items:center;
-    justify-content: space-between;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 65px;
     color: #fff;
     
 }
@@ -146,7 +141,16 @@ div#form{
 }
 .remember label input{
     accent-color: #d38a1c;
-    width:10%;
+    width:9%;
+    padding-right: 4px;
+    height: 12px;
+}
+.remember label{
+    /* gap: -8px; */
+    /* display: flex; */
+    align-content: center;
+    justify-content: center;
+
 }
 .suggestion .forgot{
     color: #d38a1c;
