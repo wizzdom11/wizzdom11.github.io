@@ -5,7 +5,7 @@
     
 }
 body{
-    font-family: sans-serif;
+    font-family:Arial sans-serif;
     background:  linear-gradient(135deg, #1B1F3B, #3C2A4D, #0A0A0A);
     background-size: cover;
     height: 97vh;
@@ -72,13 +72,14 @@ div#form{
 }
 .login{
      display: flex;
+     position: relative;
     flex-direction: column;
     width: 350px;
     height: 400px;
     backdrop-filter: blur(5px);
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 12px;
 
     
    
@@ -87,19 +88,23 @@ div#form{
     margin: 10px;
     width: 100%;
     padding: 10px 20px;
-    padding-right: 30px;
+    padding-right: 41px;
     border-radius: 60px;
     border: 2px solid rgba(255, 255, 255, .2);
     outline: none;
     background: transparent;
     color: #fff;
 }
+.login button{
+    width: 95%;
+    align-self: center;
+}
 .login input::placeholder{
    color: #fff;
 }
 .us i{
     position: absolute;
-    right: 40px;
+    right: 55px;
     color: #fff;
 }
 .login h2{
@@ -130,9 +135,18 @@ div#form{
     color: #fff;
     
 }
+.suggestion .forgot{
+    display: flex;
+    text-align: center;
+}
+.remember{
+    display: flex;
+    
+
+}
 .remember label input{
-    accent-color: #fff;
-    width: 13px;
+    accent-color: #d38a1c;
+    width:10%;
 }
 .suggestion .forgot{
     color: #d38a1c;
