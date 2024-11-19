@@ -18,6 +18,8 @@
     --nav-color: white;
     --gradient-color: linear-gradient(135deg, #0072ff, #00c6ff);
      --services-color: linear-gradient(135deg, #FFFFFF, #F0F0F0, #E8E8E8);
+     --cont-color: #fafafa ;
+     --serv-color:linear-gradient(135deg, #FFFFFF, #F0F0F0, #E8E8E8);
 }
 #read{
     background-color: var(--primary-color);
@@ -35,12 +37,14 @@
     --shadow-color: rgb(0, 0, 0);
     --small-color:#dddddd69;
     --form-color:rgba(12, 12, 12, 0.747);
-    --secondary-color: rgba(0, 0, 0, 0.904);
+    --secondary-color: black;
     --primary-color:#bdb2b2d7;
     --nav-color: rgba(12, 12, 12, 0.842);
-    --services-color: #141414;
+    --services-color: #00000048;
     --whole-color: black;
     transition: all 0.2s ease-in-out;
+    --cont-color: #141414;
+    --serv-color:#141414 ;
     
     /* linear-gradient(transparent, transparent, #0a0041ee , #0a0041ee ) */
 }
@@ -422,7 +426,7 @@ transform: scale(1.05);
     
 }
 .here{
-    background: var(--services-color);
+    background: var(--serv-color);
     border-radius: 20px;
     width: 100%;
     text-align: center;
@@ -615,7 +619,12 @@ transform: scale(1.05);
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border-radius: 70px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: var(--serv-color);
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); */
 
 }
 .services span{
@@ -707,6 +716,7 @@ transform: scale(1.05);
     align-items: center;
     gap: 70px;
     animation: transitionIn 1.4s ease-in-out ;
+    background:var(--cont-color) ;
 }
 /* @keyframes conts{
     0%{
@@ -813,7 +823,7 @@ form button:hover{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: #141414;
+    background-color:black;
     color: rgba(255, 255, 255, 0.568);
     height: 35vh;
 
@@ -959,7 +969,7 @@ form .inputBox{
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    background: var(--services-color);
+    background: var(--secondary-color);
    
    /* animation: transitionIn 1s; */
 }
