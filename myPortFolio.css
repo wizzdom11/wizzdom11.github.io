@@ -64,10 +64,14 @@ h1, h4, h3{
 }
 nav{
     position: relative;
-    width: 100%;
-    background-color: var(--nav-color);
-    height: 95px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    /* max-width: 600px; */
+    /* border-bottom: 1px solid #f2f2f2; */
+    background-color: var(--nav-color);
     justify-content:space-between;
     z-index: 999;
     /* backdrop-filter: blur(6px); */
@@ -611,7 +615,7 @@ transform: scale(1.05);
     text-align: center;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     border-radius: 70px;
 
 }
@@ -621,6 +625,11 @@ transform: scale(1.05);
 }
 .services p{
     font-size: 16px;
+}
+.web-under, .ui-under, .data-under{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 .ikon{
     font-size: 60px;
@@ -660,6 +669,9 @@ transform: scale(1.05);
     /* border:1px solid #0082e6; */
     /* box-shadow: 0 0 2px 1px #0082e6; */
     border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
     box-shadow: 10px 10px 5px var(--shadow-color);
     background:var(--services-color);
@@ -949,7 +961,6 @@ form .inputBox{
     min-height: 100vh;
     width: 100%;
     background: var(--services-color);
-   
    /* animation: transitionIn 1s; */
 }
 .tra h2{
@@ -982,213 +993,7 @@ form .inputBox{
 .cont a{
     color: var(--primary-color);
 }
-@media (max-width:1000px) {
-
-    .link{
-        margin-right: 10px;
-        justify-content:end;
-        width: 100%;
-        align-items: end;
-        margin-right: -2rem;
-    }
-    p{
-        font-size: 16px;
-    }
-    .link a{
-        font-size: 17px;
-        font-weight: 500;
-    
-    }
-    #whole p{
-        font-size: 16px;
-    }
-     .pic{
-        height: 270px;
-        width: 900px;
-     }
-     .pic img{
-        width: 100%;
-     }
-     h1 {
-        font-size: 24px;
-     }
-     
-    .words h1{
-        font-size: 24px;
-    }
-    .words h2{
-        font-size: 24px;
-    }
-    .build p{
-        font-size: 16px;
-    }
-    .words .para{
-          margin-bottom: -15px;
-    }
-    .words{
-        margin-top: 60px;
-    }
-    .nav{
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
-        height: 60px;
-    }
-    nav .logo{
-        margin-left: -1rem;
-        font-size: 32px
-
-    }
-    .contactser{
-        gap: 80px;
-        display: flex;
-
-    }
-    .parent{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .web{
-        width: 400px;
-        padding-bottom: 10px;
-        padding-left: 3px;
-        padding-right: 2px;
-    }
-    .about{
-      min-height: 100vh;
-      display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-    }
-    .contain{
-        margin-top: 0px;
-    }
-    .Dd{
-        width: 300px;
-        height: 320px;
-        display: flex;
-        justify-self:center;
-        align-content: end;
-        margin-top: 5px;
-        display: none;
-    }
-    .next h1{
-        display: flex;
-        margin-top: 30px;
-        justify-content: center;
-        margin-left: -60px;
-        width: 100%;
-        font-size: 24px;
-    }
-    .services{
-        position: relative;
-        min-height: 100vh;
-        width: 100%;
-        font-size: 16px;
-    }
-    .services h1{
-        font-size: 24px;
-    }
-    .parent >div{
-        width: 80%;
-        height: auto;
-        cursor: pointer;
-        border-radius: 9px;
-        position: relative;
-    }
-    .about p{
-        font-size: 16px;
-    }
-    .parent >div p{
-        font-size: 16px;
-        padding: 20px;
-    }
-    .parent > div h2{
-        font-size: 22px;
-    }
-
-    .next p, h4{
-        margin-right:40px ;
-        margin-left:-25px ;
-    }
-    .contactser{
-        display: flex;
-        width: 100%;
-        min-height: 100vh;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 0px;
-    }
-    .rights{
-        display: flex;
-        width: 70%;
-        height:90vh;
-    }
-    form h2{
-        font-size: 24px;
-    }
-    form {
-        width: 80%;
-        padding-bottom: 65px;
-        padding-top: 40px;
-    }
-    .rights h2{
-        padding-top: 20px;
-    }
-    .my-info p{
-        font-size: 16px;
-    }
-    .my-info{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .my-info h1{
-      font-size: 24px;
-      text-align: center;
-    }
-    .tra{
-        min-height: 100vh;
-    }
-    .tra h2{
-        font-size: 24px;
-    }
-    .image-link{
-        width: 500px;
-    }
-    .quest{
-        padding-bottom:60px ;
-    }
-    .fuuter{
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .fuuter h2{
-        margin-top: 5px;
-    }
-    .cont{
-        display: flex;
-        flex-direction: column;
-    }
-    .fa{
-        margin-top: px;
-    }
-    .ahh{
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        text-align: center;
-        align-self: center;
-
-    }
-    
-}
-@media(max-width:763px) {
+@media(max-width:1000px) {
     .nav{
         height: 7vh;
         width: 100%;
@@ -1243,6 +1048,10 @@ form .inputBox{
     }
     .about p{
         font-size: 16px;
+    }
+    .here{
+        padding-left:10px;
+        padding-right: 10px;
     }
     .services p{
         font-size: 16px;
@@ -1327,7 +1136,7 @@ form .inputBox{
     }
    
     .words{
-        margin-top: -40px;
+        margin-top: -50px;
     }
     .words p{
         font-size: 19px;
@@ -1383,9 +1192,10 @@ form .inputBox{
     }
     #whole{
         flex-direction: column;
-        row-gap: 70px;
+        row-gap: 10px;
         min-height: 100vh;
         width: 100%;
+        padding: 10px 10px;
         
     }
     .about{
@@ -1420,7 +1230,7 @@ form .inputBox{
     }
     .pic{
         margin-bottom:px;
-        margin-top: -40px;
+        margin-top: -100px;
     }
             
     .next p, h4{
@@ -1479,16 +1289,18 @@ form .inputBox{
     }
     .services{
         min-height: 100vh;
-        margin-top: 52px;
+        /* margin-top: 52px; */
         display: flex;
+        padding: 50px 0px;
         gap: 12px;
+        /* margin-bottom: 52px; */
     }
     .services>div{
         gap: 20px;
         display: flex;
     }
     .services h1{
-        margin-bottom: -10px;
+        margin-bottom: 10px;
         font-size: 20px;
     }
     form{
@@ -1527,12 +1339,16 @@ form .inputBox{
      }
     .rights{
         height: 70vh;
-        width: 90%;
+        width: 65%;
         align-self: center;
         align-content: center;
         justify-content: center;
         text-align: center;
     }
+    .rights h2{
+        font-size: 24px;
+    }
+
     .rights button{
         width: 100%;
     }
@@ -1547,7 +1363,7 @@ form .inputBox{
         text-align: center;
     }
     form{
-        width: 80%;
+        max-width: 80%;
         display: flex;
     }
     .my-info h1{
