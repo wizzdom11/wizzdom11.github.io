@@ -37,7 +37,7 @@
 .dark-theme{
     --shadow-color: rgb(0, 0, 0);
     --small-color:#dddddd69;
-    --next-color:#323232;
+    --next-color:linear-gradient(135deg, #000000, #222222);
     --form-color:rgba(12, 12, 12, 0.747);
     --secondary-color: black;
     --primary-color:#bdb2b2d7;
