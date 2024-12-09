@@ -669,11 +669,10 @@ transform: scale(1.05);
   }
 
   .circle-text {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     fill: var(--primary-color);
     text-anchor: middle; /* Horizontal center */
@@ -1375,18 +1374,19 @@ form .inputBox{
 
       .skill-circle {
         position: relative;
-        width: 14vw; /* Smaller size based on viewport width */
-        height: 30vw; /* Smaller height */
-        max-width: 80px; /* Maximum size in pixels */
-        max-height: 80px; /* Maximum size in pixels */
+        width: 80px; /* Smaller size based on viewport width */
+        height: 80px; /* Smaller height */
         opacity: 0; /* Initially hidden */
+        text-align: center;
       }
 
       .circle-text {
         font-size: 22px; /* Adjust font size for mobile */
       }
       .skill-circle svg{
-        width: 90px;
+        width: 78px;
+        align-items: center;
+        text-align: center;
 
       }
     
