@@ -856,7 +856,12 @@ form .inputBox{
     color: #0082e6;
 }
 .reach{
-    column-gap: 70px;
+    column-gap: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
     
 }
 .reach a{
@@ -876,9 +881,7 @@ form .inputBox{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    flex-direction: column;
-    animation: good 5s linear infinite;
-    animation-direction: alternate; 
+    flex-direction: column; 
 
 
 }
@@ -912,12 +915,7 @@ form .inputBox{
   .image-link:hover .hover-image {
     transform: scale(1.1) rotate(2deg); /* Image zooms and slightly rotates */
   }
-  
-.log{
-    height: 30vh;
-    width: 30vh;
-    position: relative;
-}
+
 /* @keyframes good {
     0%{background-position: 0 0;}
     100%{background-position: -300px 0;}
@@ -930,35 +928,18 @@ form .inputBox{
 }
 .quest{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    width: 90%;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+
+}
+.quest >div img{
     width: 100%;
-    justify-content: center;
-    align-items: center;
-
-}
-.quest ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.quest ul li{
-    width: 200px;
-    height: 200px;
-    background-color: #0082e6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    box-shadow: 0 0 8px 1px #323232;
-}
-
-.quest h3{
-    cursor: pointer;
-}
-.quest h3:hover{
-    color: #0082e6;
+    height: 100%;
+   
 }
 .par{
     display: none;
@@ -1174,6 +1155,14 @@ form .inputBox{
         margin-right:40px ;
         margin-left:-25px ;
     }
+    .quest{
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        /* padding-bottom: 30px; */
+    }
     .contactser{
         display: flex;
         width: 100%;
@@ -1182,6 +1171,7 @@ form .inputBox{
         align-items: center;
         flex-direction: column;
         gap: 0px;
+        padding-top: 10px;
     }
     .rights{
         display: flex;
@@ -1214,15 +1204,14 @@ form .inputBox{
     }
     .tra{
         min-height: 100vh;
+        width: 100%;
+        padding-bottom: 37px;
     }
     .tra h2{
         font-size: 24px;
     }
     .image-link{
-        width: 500px;
-    }
-    .quest{
-        padding-bottom:60px ;
+       width: 500px;
     }
     .fuuter{
         height: 50vh;
@@ -1238,7 +1227,7 @@ form .inputBox{
         flex-direction: column;
     }
     .fa{
-        margin-top: px;
+        
     }
     .ahh{
         display: flex;
@@ -1256,14 +1245,14 @@ form .inputBox{
         width: 100%;
     }
     .nav h3{
-        font-size: 30px;
+        font-size: 24px;
         margin-left: -2rem;
     }
     .ri-toggle-line{
-        font-size: 2rem;
+        font-size: 24px;
     }
     .ri-toggle-fill{
-        font-size:2rem ;
+        font-size:24px;
         cursor: pointer;
     }
     @keyframes mave {
@@ -1287,6 +1276,10 @@ form .inputBox{
         overflow: hidden;
 
     } */
+     .words .build{
+        padding-left: 15px;
+        padding-right: 15px;
+     }
     
     .parent{
         height: 100vh;
@@ -1364,10 +1357,14 @@ form .inputBox{
     }
     .ri-close-line{
         display: flex;
-        font-size: 2.5rem;
+        font-size: 24px;
         width: 100%;
         margin-left: 16rem;
+        margin-top: 20px;
+        padding: 10px;
+        background: var(--serv-color);
         cursor: pointer;
+        border-radius: 40px;
     }
     /* .pic{
          width: 50px;
@@ -1413,6 +1410,7 @@ form .inputBox{
     }
     .ri-menu-fill{
         cursor: pointer;
+        font-size: 24px;
     }
     .ri-menu-fill.active{
         display: none;
@@ -1642,7 +1640,11 @@ form .inputBox{
         font-size: 19px;
     }
     .quest{
-        gap: 15px;
+        gap: 40px;
+    }
+    .fuuter .reach{
+        text-align: center;
+        margin-right: -40px;
     }
     .fuuter{
         height: 31vh;
@@ -1667,20 +1669,13 @@ form .inputBox{
         margin-bottom: -2rem;
 
     }
-    .fa h2{
-        text-align: center;
-        font-size: 20px;
-    }
-    .fa p{
-        font-size: 17px;
-    }
+   
     .fa{
         width: 100%;
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
-        margin-top: -7px;
         gap: 20px;
         text-align: center;
     }
@@ -1688,17 +1683,24 @@ form .inputBox{
         font-size: 16px;
     }
     .image-link{
-        width: 380px;
+        width: 400px;
+        object-fit: contain;
+
     }
+
     .tra{
         gap: 60px;
         min-height: 100vh;
         width: 100%;
         
+    }.quest >div img{
+        width: 100%;
+        height: 200px;
+       
     }
     .tra h1{
         font-size: 20px;
-        margin-top: -160px;
+        margin-top: -50px;
     }
     
     .ahh{
