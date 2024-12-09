@@ -55,6 +55,36 @@ function reveal(){
             
     
     }}
+    const options = {
+        root: null, // Relative to the viewport
+        threshold: 0.5, // Trigger when 50% of the circle is in view
+      };
+  
+      const progress = [60, 50, 45, 30];  // 70% for all skills
+      const circles = document.querySelectorAll('.foreground');
+  
+      const animateCircle = (circle, progressPercentage) => {
+        const dashOffset = 440 - (440 * progressPercentage / 100);
+        circle.style.strokeDashoffset = dashOffset; // Animate the circle fill based on percentage
+      };
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // When the circle comes into view, trigger animation
+            const circle = entry.target.querySelector('.foreground');
+            const index = [...circles].indexOf(circle);
+            animateCircle(circle, progress[index]);
+            entry.target.style.opacity = 1;  // Fade in the circle
+            observer.unobserve(entry.target); // Stop observing after animation
+          }
+        });
+      }, options);
+  
+      // Observe each skill circle
+      document.querySelectorAll('.skill-circle').forEach((circle) => {
+        observer.observe(circle);
+      });
 
 MAN.addEventListener('click', (e)=>{
         droplink.classList.toggle('open');
