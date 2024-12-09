@@ -13,7 +13,8 @@
     --whole-color: linear-gradient(135deg, #FFFFFF, #F0F0F0, #E8E8E8);
     --form-color: linear-gradient(135deg, #FFFFFF, #F0F0F0, #E8E8E8);
     --secondary-color: #ffffff;
-    --small-color: #ddd;
+    --next-color: linear-gradient(135deg, #ffffff, #dcdcdc, #f2f2f2);
+    --small-color: #333333bd;
     --primary-color:black;
     --nav-color: white;
     --gradient-color: linear-gradient(135deg, #0072ff, #00c6ff);
@@ -36,6 +37,7 @@
 .dark-theme{
     --shadow-color: rgb(0, 0, 0);
     --small-color:#dddddd69;
+    --next-color:#323232;
     --form-color:rgba(12, 12, 12, 0.747);
     --secondary-color: black;
     --primary-color:#bdb2b2d7;
@@ -62,6 +64,9 @@ body{
 }
 h1, h4, h3{
     text-transform: uppercase;
+}
+h1{
+    border-bottom: 1px solid #ddd;
 }
 .c{
     color:#0a0041ee ;
@@ -225,6 +230,7 @@ a:hover{
 .words h1{
     animation: transitionIn 1.3s ease-in-out;
     overflow: hidden;
+    border: none;
 }
 /* @keyframes ani {
     0%{-webkit-transform:translateX(-50px);
@@ -434,6 +440,9 @@ transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
 
 }
+.about h1{
+    border: none;
+}
 .about .event{
     display: flex;
     align-items: center;
@@ -447,7 +456,7 @@ transform: scale(1.05);
     bottom: 0;
     width: 2px;
     border-left: 4px dotted var(--small-color);
-    z-index:-1 ;
+    z-index:999 ;
 }
 .event:last-child::before {
     /* display: none; */
@@ -461,6 +470,7 @@ transform: scale(1.05);
     margin-right: 4px;
     flex-shrink: 0;
     right: 2px;
+    z-index: 999;
 }
 
 .about p{
@@ -499,7 +509,7 @@ transform: scale(1.05);
     width: 200px;
     height: 200px;
     transform: rotate(45deg);
-    background-color: #0082e6;
+    background:var(--small-color);
     border-radius: 20px;
     margin-left: 50px;
     animation: con 1.5s ease-in-out;
@@ -526,6 +536,13 @@ transform: scale(1.05);
 .next{
     animation: transitionIn 1.3s ease-in-out;
     padding: 20px;
+    /* background: var(--serv-color); */
+    background: var(--next-color);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 260px;
+    border-bottom-left-radius: 100px;
+    margin-top: 20px;
     width: auto;
 }
 .continue p{
@@ -1496,7 +1513,6 @@ form .inputBox{
         width: 180px;
         height: 180px;
         transform: rotate(45deg);
-        background-color: #0082e6;
         border-radius: 20px;
         margin-left: 20px;
     }
