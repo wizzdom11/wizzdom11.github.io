@@ -651,6 +651,7 @@ transform: scale(1.05);
   .skill-circle text{
     font-size: 16px;
     font-weight: 700;
+    fill: var(--primary-color);
   }
 
   .skill-circle {
@@ -682,7 +683,7 @@ transform: scale(1.05);
     transform: translate(-50%, -50%);
     font-size: 17px;
     font-weight: bold;
-    fill: var(--primary-color);
+    fill:;
     text-anchor: middle; /* Horizontal center */
      /* Vertical center */
   }
@@ -1371,26 +1372,14 @@ form .inputBox{
     .about p{
         font-size: 16px;
     }
-    .circle-container {
-        justify-content: center;
-        flex-direction: row; /* Stack vertically on mobile */
-        align-items: center;
-        width: 100%;
-        gap: 2px;
-        padding-bottom: 20px;
-      }
-      .foreground {
-        stroke-dasharray: 440; /* Full circumference */
-        stroke-dashoffset: 440; /* Initially hidden */
-        transition: stroke-dashoffset 2s ease; /* Smooth animation */
-        will-change: stroke-dashoffset;
-      }
+    .circle-container{
+        padding-bottom: 30px;
+    }
       .skill-circle {
         position: relative;
         width: 50px; /* Smaller size based on viewport width */
         height: 80px; /* Smaller height */
         opacity: 0; /* Initially hidden */
-        text-align: center;
       }
 
       .skill-circle text {
