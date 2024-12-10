@@ -644,10 +644,18 @@ transform: scale(1.05);
     width: 80%;
     max-width: 800px;
   }
+  .skill-circle svg{
+    width: 100px;
+
+  }
+  .skill-circle text{
+    font-size: 16px;
+    font-weight: 700;
+  }
 
   .skill-circle {
     position: relative;
-    width: 120px;
+    width: 90px;
     height: 120px;
     margin: 20px;
   }
@@ -1374,19 +1382,17 @@ form .inputBox{
 
       .skill-circle {
         position: relative;
-        width: 80px; /* Smaller size based on viewport width */
+        width: 50px; /* Smaller size based on viewport width */
         height: 80px; /* Smaller height */
         opacity: 0; /* Initially hidden */
         text-align: center;
       }
 
-      .circle-text {
+      .skill-circle text {
         font-size: 22px; /* Adjust font size for mobile */
       }
       .skill-circle svg{
         width: 78px;
-        align-items: center;
-        text-align: center;
 
       }
     
