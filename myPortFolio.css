@@ -1380,18 +1380,11 @@ form .inputBox{
     }
       .skill-circle {
         position: relative;
-        width: 65px; /* Smaller size based on viewport width */
-        height: 80px; /* Smaller height */
+        width: 13vw; /* Smaller size based on viewport width */
+        height: 24vw; /* Smaller height */
         opacity: 0; /* Initially hidden */
       }
 
-      .skill-circle text {
-        font-size: 22px; /* Adjust font size for mobile */
-      }
-      .skill-circle svg{
-        width: 78px;
-
-      }
     
     .services p{
         font-size: 16px;
