@@ -664,7 +664,6 @@ transform: scale(1.05);
     fill: none;
     stroke-width: 10;
   }
-
   .background {
     stroke: #e0e0e0; /* Light grey background circle */
   }
@@ -674,6 +673,7 @@ transform: scale(1.05);
     stroke-dasharray: 440; /* The total length of the circle */
     stroke-dashoffset: 440; /* Start from 0% */
     transition: stroke-dashoffset 2s ease-in-out; /* Smooth animation */
+    will-change: stroke-dashoffset;
   }
 
   .circle-text {
@@ -1379,7 +1379,12 @@ form .inputBox{
         gap: 2px;
         padding-bottom: 20px;
       }
-
+      .foreground {
+        stroke-dasharray: 440; /* Full circumference */
+        stroke-dashoffset: 440; /* Initially hidden */
+        transition: stroke-dashoffset 2s ease; /* Smooth animation */
+        will-change: stroke-dashoffset;
+      }
       .skill-circle {
         position: relative;
         width: 50px; /* Smaller size based on viewport width */
