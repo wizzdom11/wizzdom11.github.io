@@ -680,10 +680,11 @@ transform: scale(1.05);
   .circle-text {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     font-size: 17px;
     font-weight: bold;
-    fill:;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-anchor: middle; /* Horizontal center */
      /* Vertical center */
   }
@@ -1374,10 +1375,12 @@ form .inputBox{
     }
     .circle-container{
         padding-bottom: 30px;
+        justify-content: center;
+        align-items: center;
     }
       .skill-circle {
         position: relative;
-        width: 50px; /* Smaller size based on viewport width */
+        width: 65px; /* Smaller size based on viewport width */
         height: 80px; /* Smaller height */
         opacity: 0; /* Initially hidden */
       }
