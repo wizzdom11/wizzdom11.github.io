@@ -18,6 +18,7 @@ let hea = document.querySelectorAll('.great');
 let para = document.querySelectorAll('.par');
 const cancel = document.querySelector('.ri-close-line');
 const dark = document.querySelector('.ri-toggle-line');
+
 goOn.style.display= 'none';
 
 // document.addEventListener('DOMContentLoaded', function(){
@@ -35,6 +36,80 @@ goOn.style.display= 'none';
 
 //         droplink.classList.remove('active');
 // }
+const number = document.querySelectorAll('.number');
+let counter1 = 0;
+let counter2 = 0;
+let counter3 = 0;
+let counter4 = 0;
+setInterval(()=>{
+        if(counter1 == 70){
+                clearInterval();
+        }else{
+                counter1 += 1;
+        number[0].innerHTML = counter1 +"%"; 
+        }
+       
+}, 29);
+setInterval(()=>{
+        if(counter2 == 80){
+                clearInterval();
+        }else{
+                counter2 += 1;
+        number[1].innerHTML = counter2 +"%"; 
+        }
+       
+}, 25);
+setInterval(()=>{
+        if(counter3 == 50){
+                clearInterval();
+        }else{
+                counter3 += 1;
+        number[2].innerHTML = counter3 +"%"; 
+        }
+       
+}, 40);
+setInterval(()=>{
+        if(counter4 == 35){
+                clearInterval();
+        }else{
+                counter4 += 1;
+        number[3].innerHTML = counter4 +"%"; 
+        }
+       
+}, 52);
+// Create an IntersectionObserver to detect when the skill sections come into view
+// Create an IntersectionObserver to detect when the skill sections come into view
+const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            // Log the entry to check if the intersection observer is working
+        //     console.log('Entry:', entry);
+            
+            // If the skill element is in view (intersecting), add the 'animated' class to the circle
+            if (entry.isIntersecting) {
+                console.log('Skill in view:', entry.target);
+                
+                const skillCircle = entry.target.querySelector('circle');
+                if (skillCircle) {
+                //     console.log('Adding animated class to circle:', skillCircle);
+                    skillCircle.classList.add('animated'); // Trigger the animation
+                }
+                
+                // Once the animation starts, we can stop observing the element
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 }); // The element should be at least 50% visible before triggering
+    
+    // Select all .skill elements to observe
+    const skills = document.querySelectorAll('.skill');
+    skills.forEach(skill => {
+        console.log('Observing skill:', skill);
+        observer.observe(skill); // Start observing each skill element
+    });
+    
+    
+    
+
 window.addEventListener('scroll', reveal);
 
 function reveal(){
@@ -52,39 +127,10 @@ function reveal(){
             reveals[i].classList.remove('active');
 
         }
+        
             
     
     }}
-    const options = {
-        root: null, // Relative to the viewport
-        threshold: 0.5, // Trigger when 50% of the circle is in view
-      };
-  
-      const progress = [60, 50, 45, 30];  // 70% for all skills
-      const circles = document.querySelectorAll('.foreground');
-  
-      const animateCircle = (circle, progressPercentage) => {
-        const dashOffset = 440 - (440 * progressPercentage / 100);
-        circle.style.strokeDashoffset = dashOffset; // Animate the circle fill based on percentage
-      };
-  
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            // When the circle comes into view, trigger animation
-            const circle = entry.target.querySelector('.foreground');
-            const index = [...circles].indexOf(circle);
-            animateCircle(circle, progress[index]);
-            entry.target.style.opacity = 1;  // Fade in the circle
-            observer.unobserve(entry.target); // Stop observing after animation
-          }
-        });
-      }, options);
-  
-      // Observe each skill circle
-      document.querySelectorAll('.skill-circle').forEach((circle) => {
-        observer.observe(circle);
-      });
 
 MAN.addEventListener('click', (e)=>{
         droplink.classList.toggle('open');
