@@ -686,7 +686,9 @@ transform: scale(1.05);
     height: 160px;
     width: 160px;
     border-radius: 50%;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                 -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
                
@@ -710,9 +712,9 @@ transform: scale(1.05);
 }
 circle{
     fill: none;
-    stroke:url(#GradientColor);
+    stroke:url(#GradientColorr);
     stroke-width: 20px;
-    stroke-dasharray: 472;
+    stroke-dasharray: 439.8;
     stroke-dashoffset: 472;
     animation-duration: 2s;
    
@@ -723,16 +725,20 @@ circle{
 }
 .skill-1 svg circle.animated{
     animation: anim1 2s linear forwards;
+    -webkit-animation: anim1 2s linear forwards;
 }
 .skill-2 svg circle.animated {
     animation: anim2 2s linear forwards;
+    -webkit-animation: anim2 2s linear forwards;
 }
 .skill-3 svg circle.animated {
     animation: anim3 2s linear forwards;
+    -webkit-animation: anim3 2s linear forwards ;
    
 }
 .skill-4 svg circle.animated {
     animation: anim4 2s linear forwards;
+    -webkit-animation: anim4 2s linear forwards;
     
 }
 /* .skill svg circle.animated {
@@ -1110,9 +1116,9 @@ form .inputBox{
 } */
 .reveal{
     position: relative;
-    transform: translateY(120px);
+    transform: translateY(90px);
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 2.5s ease;
 }
 .reveal.active{
     transform: translateY(0);
@@ -1602,6 +1608,25 @@ form .inputBox{
         display: flex;
       flex-wrap: wrap;
     }
+    .in::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 70%;
+        height: 1px; /* Adjust thickness */
+        background-color: #333; /* Color of the dividing border */
+        transform: translateY(-50%);
+      }
+      .in::after {
+        content: '';
+        position: absolute;
+        
+        left: 50%;
+        width: 1px; /* Thickness of the vertical line */
+        height: 85%;
+        background-color: #333;
+        transform: translateX(-50%);
+      }
     circle{
         height: 30px;
         width: 50px;
