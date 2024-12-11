@@ -725,20 +725,20 @@ circle{
 }
 .skill-1 svg circle.animated{
     animation: anim1 2s linear forwards;
-    -webkit-animation: anim1 2s linear forwards;
+    
 }
 .skill-2 svg circle.animated {
     animation: anim2 2s linear forwards;
-    -webkit-animation: anim2 2s linear forwards;
+   
 }
 .skill-3 svg circle.animated {
     animation: anim3 2s linear forwards;
-    -webkit-animation: anim3 2s linear forwards ;
+  
    
 }
 .skill-4 svg circle.animated {
     animation: anim4 2s linear forwards;
-    -webkit-animation: anim4 2s linear forwards;
+    
     
 }
 /* .skill svg circle.animated {
@@ -754,25 +754,25 @@ svg{
 }
 @keyframes anim1 {
     100%{
-        stroke-dashoffset: 141.6;
+        stroke-dashoffset: 164.14;
     }
     
 }
 @keyframes anim2 {
     100%{
-        stroke-dashoffset: 94.4;
+        stroke-dashoffset: 120.16;
     }
     
 }
 @keyframes anim3 {
     100%{
-        stroke-dashoffset: 236 ;
+        stroke-dashoffset: 252.1;
     }
     
 }
 @keyframes anim4 {
     100%{
-        stroke-dashoffset: 306.8;
+        stroke-dashoffset: 318.07;
     }
     
 }
