@@ -674,7 +674,7 @@ transform: scale(1.05);
     padding-top: 10px;
     padding-bottom: 50px;
     background: var(--services-color);
-    gap: 50px;
+    gap: 30px;
 }
 .skill{
     width: 160px;
@@ -1179,6 +1179,13 @@ form .inputBox{
     .words{
         margin-top: 60px;
     }
+    .in{
+        padding-left: 10px;
+    }
+    .skill{
+
+       margin-top: -30px;
+    }
     .nav{
         justify-content: space-between;
         display: flex;
@@ -1613,7 +1620,7 @@ form .inputBox{
     .in{
         display: flex;
       flex-wrap: wrap;
-      min-height: 90vh;
+      min-height: 85vh;
       padding-bottom: 90px;
     }
     .skill{
