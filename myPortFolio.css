@@ -674,13 +674,19 @@ transform: scale(1.05);
     padding-top: 10px;
     padding-bottom: 50px;
     background: var(--services-color);
-    gap: 40px;
+    gap: 50px;
 }
 .skill{
     width: 160px;
     height: 160px;
     position: relative;
 
+}
+.skill p{
+    padding-left: 14px;
+    /* border-right: 1px solid #0082e6; */
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
 }
 .outer{
     height: 160px;
@@ -766,13 +772,13 @@ svg{
 }
 @keyframes anim3 {
     100%{
-        stroke-dashoffset: 252.1;
+        stroke-dashoffset: 208.12;
     }
     
 }
 @keyframes anim4 {
     100%{
-        stroke-dashoffset: 318.07;
+        stroke-dashoffset: 230.11;
     }
     
 }
@@ -1607,23 +1613,20 @@ form .inputBox{
     .in{
         display: flex;
       flex-wrap: wrap;
+      min-height: 90vh;
+      padding-bottom: 90px;
     }
-    .in::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        width: 70%;
-        height: 1px; /* Adjust thickness */
-        background-color: #333; /* Color of the dividing border */
-        transform: translateY(-50%);
-      }
+    .skill{
+       margin-top: -40px;
+    }
+    
       .in::after {
         content: '';
         position: absolute;
         
         left: 50%;
         width: 1px; /* Thickness of the vertical line */
-        height: 85%;
+        height: 70%;
         background-color: #333;
         transform: translateX(-50%);
       }

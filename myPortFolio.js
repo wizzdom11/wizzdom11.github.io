@@ -60,23 +60,23 @@ setInterval(()=>{
        
 }, 25);
 setInterval(()=>{
-        if(counter3 == 50){
+        if(counter3 == 60){
                 clearInterval();
         }else{
                 counter3 += 1;
         number[2].innerHTML = counter3 +"%"; 
         }
        
-}, 40);
+}, 31);
 setInterval(()=>{
-        if(counter4 == 35){
+        if(counter4 == 55){
                 clearInterval();
         }else{
                 counter4 += 1;
         number[3].innerHTML = counter4 +"%"; 
         }
        
-}, 52);
+}, 32);
 // Create an IntersectionObserver to detect when the skill sections come into view
 // Create an IntersectionObserver to detect when the skill sections come into view
 const observer = new IntersectionObserver((entries, observer) => {
