@@ -1181,6 +1181,7 @@ form .inputBox{
     }
     .in{
         padding-left: 10px;
+        min-height: 87vh;
     }
     .skill{
 
