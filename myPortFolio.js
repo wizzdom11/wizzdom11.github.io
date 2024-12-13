@@ -69,14 +69,14 @@ setInterval(()=>{
        
 }, 31);
 setInterval(()=>{
-        if(counter4 == 55){
+        if(counter4 == 58){
                 clearInterval();
         }else{
                 counter4 += 1;
         number[3].innerHTML = counter4 +"%"; 
         }
        
-}, 32);
+}, 33);
 // Create an IntersectionObserver to detect when the skill sections come into view
 // Create an IntersectionObserver to detect when the skill sections come into view
 const observer = new IntersectionObserver((entries, observer) => {
