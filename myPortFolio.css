@@ -675,6 +675,7 @@ transform: scale(1.05);
     padding-bottom: 50px;
     background: var(--services-color);
     gap: 30px;
+    overflow: hidden;
 }
 .skill{
     width: 160px;
@@ -1122,9 +1123,9 @@ form .inputBox{
 } */
 .reveal{
     position: relative;
-    transform: translateY(90px);
+    transform: translateY(12px);
     opacity: 0;
-    transition: all 2.5s ease;
+    transition: all 1.5s ease;
 }
 .reveal.active{
     transform: translateY(0);
