@@ -86,6 +86,12 @@ nav{
     /* backdrop-filter: blur(6px); */
     /* box-shadow: 0 0 3px 1px #323232; */
 }
+.cap {
+    position: absolute;
+    width: 60px; /* Adjust size as needed */
+    top: -5px;
+    left: 140px;
+  }
 .moon{
     display: flex;
     flex: 1;
@@ -794,6 +800,8 @@ svg{
 }
 .ikon{
     font-size: 60px;
+    border-bottom: 1px solid var(--small-color);
+    width: 30%;
 }
 .parent{
     margin-top: 2px;
@@ -1143,6 +1151,11 @@ form .inputBox{
         align-items: end;
         margin-right: -2rem;
     }
+    .cap{
+        top: -2px;
+       left: 120px;
+       width: 40px;
+    }
     p{
         font-size: 16px;
     }
@@ -1269,8 +1282,9 @@ form .inputBox{
         font-size: 30px;
         align-self: center;
         text-align: center;
-        width: 100%;
+        width: 20%;
         align-self: center;
+        border-bottom: 1px solid var(--small-color);
     }
     .parent >div{
         width: 80%;
@@ -1396,6 +1410,11 @@ form .inputBox{
     .nav{
         height: 7vh;
         width: 100%;
+    }
+    .cap{
+        top: -5px;
+       left: 85px;
+       width: 37px;
     }
     .nav h3{
         font-size: 24px;
@@ -1726,11 +1745,12 @@ form .inputBox{
     }
     .ikon{
         font-size: 40px;
+        border-bottom: 1px solid var(--small-color);
+        width: 20%;
     }
     .services{
         min-height: 100vh;
         /* margin-top: 52px; */
-        display: flex;
         padding: 35px 0px;
         gap: 12px;
         /* margin-bottom: 52px; */
