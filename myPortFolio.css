@@ -441,6 +441,9 @@ transform: scale(1.05);
     margin-bottom: 5px;
     
 }
+.next h4{
+    width: auto;
+}
 .here{
     background: var(--serv-color);
     border-radius: 20px;
@@ -691,6 +694,9 @@ transform: scale(1.05);
     border: 3px solid var(--heading-color);
     box-shadow:  10px 10px var(--heading-color);
 }
+.thm-section-title h4{
+    width: auto;
+} 
 .container{
     display: flex;
     flex-direction: column;
