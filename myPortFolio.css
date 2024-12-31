@@ -69,9 +69,6 @@ body{
 h1, h4, h3{
     text-transform: uppercase;
 }
-h1{
-    border-bottom: 1px solid #ddd;
-}
 .c{
     color:#0a0041ee ;
 }
@@ -441,8 +438,10 @@ transform: scale(1.05);
     margin-bottom: 5px;
     
 }
-.next h4{
-    width: auto;
+.next  .sub-title-shape-left{
+   width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .here{
     background: var(--serv-color);
@@ -608,7 +607,8 @@ transform: scale(1.05);
     color: white;
 }
 .next h4{
-    text-align: center;
+ width:auto;
+ text-align: center;
 }
 .next h1{
     text-align: center;
@@ -684,19 +684,15 @@ transform: scale(1.05);
     text-transform: uppercase;
     margin-bottom: 10px;
     letter-spacing: 2px;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
     padding: 3px;
     background: var(--secondary-color);
     border-radius: 1px;
     border: 3px solid var(--heading-color);
     box-shadow:  10px 10px var(--heading-color);
 }
-.thm-section-title h4{
-    width: auto;
-} 
+.container .sub-title-shape-left{
+margin-bottom: -30px;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -704,12 +700,23 @@ transform: scale(1.05);
     justify-content: center;
     align-items: center;
 }
+.container .h4 {
+    padding-bottom: -9px;
+    margin-bottom: -100px;
+}
 .thm-section-title{
     text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin:0px;
 }
 .thm-section-title h2{
     margin-top: 20px;
     font-size: 2rem;
+}
+.thm-section-title h4{
+    margin-bottom: -50px;
+    width: fit-content;
 }
 .container .row{
     display: flex;
@@ -1015,6 +1022,9 @@ width: 100%;
     gap: 20px;
     margin-bottom: 100px;
 }
+.my-info h4{
+    width: fit-content;
+}
 .my-info i{
     color: #0082e6;
 }
@@ -1291,8 +1301,8 @@ form .inputBox{
         font-size: 16px;
     }
      .pic{
-        height: 350px;
-        width: 350px;
+        height: 290px;
+        width: 290px;
      }
      .pic img{
         width: 100%;
@@ -1748,9 +1758,11 @@ form .inputBox{
     }
     #whole{
         flex-direction: column;
-        row-gap: 70px;
+        row-gap: 50px;
+        justify-content: flex-start;
         min-height: 100vh;
         width: 100%;
+        padding-top: 60px;
         
     }
     .about{
