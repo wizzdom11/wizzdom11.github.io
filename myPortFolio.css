@@ -2015,15 +2015,12 @@ form .inputBox{
         position: absolute;
        
         justify-content: flex-start;
-        height: auto;
+        height: 100%;
         gap: 50px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        padding-bottom: 70px;
+        padding-bottom: 10px;
         
-    }
-    .about{
-        margin-top: -100px;
     }
     .about p{
         font-size: 16px;
@@ -2171,10 +2168,7 @@ form .inputBox{
        
     }
     #whole{
-        flex-direction: column;
         position: relative;
-        
-        justify-content: flex-start;
         min-height: 100vh;
         padding-top: 80px;
         margin-bottom: 0px;
