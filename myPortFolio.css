@@ -2011,11 +2011,15 @@ form .inputBox{
     }
     .every-two{
         flex-direction: column;
-        height:500px;
+        height: 100%;
+        position: absolute;
+       
         justify-content: flex-start;
+        height: auto;
         gap: 50px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
+        padding-bottom: 120px;
     }
     .about p{
         font-size: 16px;
@@ -2164,11 +2168,12 @@ form .inputBox{
     }
     #whole{
         flex-direction: column;
-        row-gap: 50px;
+        position: relative;
+        
         justify-content: flex-start;
         min-height: 100vh;
-        width: 100%;
         padding-top: 80px;
+        margin-bottom: 0px;
         
     }
     .about{
