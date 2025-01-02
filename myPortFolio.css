@@ -2169,9 +2169,9 @@ form .inputBox{
     }
     #whole{
         position: relative;
-        min-height: 80vh;
-        padding-top: 50px;
-        margin-bottom: 0px;
+        min-height: 100vh;
+        padding-top: 40px;
+        margin-bottom: -40px;
         
     }
     .about{
