@@ -2015,7 +2015,7 @@ form .inputBox{
         height: auto;
         justify-content: flex-start;
         gap: 50px;
-        padding-bottom: 10px;
+        padding-bottom: 50px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
        border-bottom-left-radius:30px;
@@ -2170,7 +2170,7 @@ form .inputBox{
     #whole{
         position: relative;
         min-height: 80vh;
-        padding-top: 80px;
+        padding-top: 50px;
         margin-bottom: 0px;
         
     }
