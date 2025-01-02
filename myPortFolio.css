@@ -2011,17 +2011,15 @@ form .inputBox{
     }
     .every-two{
         flex-direction: column;
-        height: auto;
         position: absolute;
-        align-items: center;
-       
+        height: auto;
         justify-content: flex-start;
         gap: 50px;
-         margin-top: 50px;
+        padding-bottom: 10px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        padding-bottom: 20px;
-       
+       border-bottom-left-radius:30px;
+       border-bottom-right-radius: 30px;
         
     }
     .about p{
@@ -2171,7 +2169,7 @@ form .inputBox{
     }
     #whole{
         position: relative;
-        min-height: 100vh;
+        min-height: 80vh;
         padding-top: 80px;
         margin-bottom: 0px;
         
