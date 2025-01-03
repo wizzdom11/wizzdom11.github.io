@@ -24,7 +24,7 @@
      --heading-color: #05198a79;
      --skills-content: #f7f8f9;
      --home-color:#E8E8E8 ;
-}
+     --line-color: #f3f3f3;}
 #read{
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -53,6 +53,7 @@
     --heading-color:#05198a79;
     --skills-content: #68626248;
     --home-color: #68626248;
+    --line-color:#1a1b1d;
 
     
     /* linear-gradient(transparent, transparent, #0a0041ee , #0a0041ee ) */
@@ -86,6 +87,7 @@ nav{
     /* border-bottom: 1px solid #f2f2f2; */
     background-color: var(--nav-color);
     justify-content:space-between;
+    border-bottom: 1px solid var(--line-color);
     z-index: 999;
     /* backdrop-filter: blur(6px); */
     /* box-shadow: 0 0 3px 1px #323232; */
@@ -1657,9 +1659,13 @@ form .inputBox{
     #whole p{
         font-size: 16px;
     }
+    .every-two{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
      .pic{
-        height: 290px;
-        width: 290px;
+        height: 310px;
+        width: 310px;
      }
      .pic img{
         width: 100%;
@@ -1681,7 +1687,7 @@ form .inputBox{
           margin-bottom: -15px;
     }
     .words{
-        margin-top: 60px;
+       
     }
     .in{
         padding-left: 10px;
