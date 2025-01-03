@@ -486,7 +486,6 @@ transform: scale(1.05);
     bottom: 0;
     width: 2px;
     border-left: 4px dotted var(--small-color);
-    z-index:999 ;
 }
 .event:last-child::before {
     /* display: none; */
@@ -494,13 +493,13 @@ transform: scale(1.05);
 .about .circle{
     width: 15px;
     height: 15px;
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     border-radius: 50%;
     border: 4px solid var(--small-color);
     margin-right: 4px;
     flex-shrink: 0;
     right: 2px;
-    z-index: 999;
+    /* z-index: 999; */
 }
 
 .about p{
