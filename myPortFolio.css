@@ -88,7 +88,7 @@ nav{
     background-color: var(--nav-color);
     justify-content:space-between;
     border-bottom: 1px solid var(--line-color);
-    z-index: 999;
+    z-index: 1111;
     /* backdrop-filter: blur(6px); */
     /* box-shadow: 0 0 3px 1px #323232; */
 }
@@ -499,7 +499,7 @@ transform: scale(1.05);
     margin-right: 4px;
     flex-shrink: 0;
     right: 2px;
-    /* z-index: 999; */
+    z-index: 999;
 }
 
 .about p{
