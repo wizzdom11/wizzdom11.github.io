@@ -2174,6 +2174,11 @@ form .inputBox{
     }
     .about{
         min-height: 100vh;
+        background-image: url(https://media.istockphoto.com/id/990288238/vector/line-business-management-icons.jpg?s=612x612&w=0&k=20&c=mMtB3ySJml8AMvkIVbTxD4Hq41BVoxocvCO-nu0GNoM=);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: var(--nav-color) ;
+        background-blend-mode: multiply; 
         width: 100%;
         display: flex;
         justify-content: center;
@@ -2181,6 +2186,11 @@ form .inputBox{
         column-gap: -10px;
         flex-direction: column;
         margin-top: -40px;
+        /* background: var(--primary-color); */
+    }
+    .about .contain{
+        padding-top: -30px;
+
     }
     .outer{
         height: 160px;
