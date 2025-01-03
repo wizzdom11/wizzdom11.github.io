@@ -2180,7 +2180,7 @@ form .inputBox{
         align-items: center;
         column-gap: -10px;
         flex-direction: column;
-        margin-top: -20px;
+        margin-top: -40px;
     }
     .outer{
         height: 160px;
