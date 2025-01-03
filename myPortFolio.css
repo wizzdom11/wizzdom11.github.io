@@ -2012,6 +2012,7 @@ form .inputBox{
         gap: 50px;
         height: 500px;
         padding-bottom: 50px;
+        margin-top: -20px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
        border-bottom-left-radius:30px;
@@ -2167,7 +2168,7 @@ form .inputBox{
         position: relative;
         align-items: center;
         justify-content: center;
-        padding-top: 55px;
+        padding-top: 20px;
         margin-bottom: 0px;
         
     }
@@ -2179,10 +2180,12 @@ form .inputBox{
         align-items: center;
         column-gap: -10px;
         flex-direction: column;
+        margin-top: -20px;
     }
     .outer{
         height: 160px;
         width: 160px;
+
     }
     .event .here{
         padding: 15px 10px;
