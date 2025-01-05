@@ -1216,15 +1216,21 @@ form{
 form input, textarea{
     width:  100%;
     padding: 5px 0px;
+    padding-left: 10px;
     margin: 10px 0;
-    border-radius: 6px;
+    border-radius: 2px;
     border: none;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     outline: none;
-    border-bottom: 2px solid var(--primary-color);
-    border-left: 1px solid var(--form-color);
+    /* border-left: 1px solid var(--form-color); */
     resize: none;
+}
+form input:focus{
+    border: 2px solid #0082e6;
+}
+form textarea:focus{
+    border: 2px solid #0082e6;
 }
 form ::placeholder{
     color: var(--primary-color);
@@ -1239,10 +1245,6 @@ form button{
     color: var(--secondary-color);
     cursor: pointer;
     
-}
-form button:hover{
-    background-color: var(--primary-color);
-    box-shadow: 0 0 8px 1px #323232;
 }
 .fuuter{
     display: flex;
@@ -1678,10 +1680,11 @@ form .inputBox{
 }
 
 .scroll-to-top:hover {
-    background-color: #0072ff;
+    
 }
 .scroll-to-top.clicked {
-    background-color: #2a2a2f; /* Original background color */
+    /* background-color: #2a2a2f; Original background color */
+    background-color: #0072ff;
 }
 
 .ri-arrow-up-line{
