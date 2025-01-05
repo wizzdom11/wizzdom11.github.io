@@ -17,7 +17,7 @@ const Butt = document.querySelectorAll('.ope');
 let hea = document.querySelectorAll('.great');
 let para = document.querySelectorAll('.par');
 const cancel = document.querySelector('.ri-close-line');
-const dark = document.querySelector('.ri-toggle-line');
+const dark = document.querySelector('.ri-sun-fill');
 
 goOn.style.display= 'none';
 
@@ -79,27 +79,29 @@ goOn.style.display= 'none';
 // }, 33);
 // Create an IntersectionObserver to detect when the skill sections come into view
 // Create an IntersectionObserver to detect when the skill sections come into view
-const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            // Log the entry to check if the intersection observer is working
-        //     console.log('Entry:', entry);
-            
-            // If the skill element is in view (intersecting), add the 'animated' class to the circle
-            if (entry.isIntersecting) {
-                console.log('Skill in view:', entry.target);
-                
-                const skillCircle = entry.target.querySelector('circle');
-                if (skillCircle) {
-                //     console.log('Adding animated class to circle:', skillCircle);
-                    skillCircle.classList.add('animated'); // Trigger the animation
-                }
-                
-                // Once the animation starts, we can stop observing the element
-                observer.unobserve(entry.target);
-            }
+// JavaScript for Scroll-to-Top functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopBtn = document.querySelector(".scroll-to-top");
+    const scrollThreshold = 100; // Scroll threshold to show the button
+
+    // Show or hide the button based on scroll position
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > scrollThreshold) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    });
+
+    // Scroll smoothly to the top when the button is clicked
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
         });
-    }, { threshold: 0.5 }); // The element should be at least 50% visible before triggering
-    
+    });
+});
+
     // Select all .skill elements to observe
     const skills = document.querySelectorAll('.skill');
     skills.forEach(skill => {
@@ -206,10 +208,10 @@ MAN.addEventListener('click', (e)=>{
     })
     dark.addEventListener('click', (e)=> {
         document.body.classList.toggle('dark-theme');
-        if (dark.classList.contains('ri-toggle-line')){
-                dark.classList.replace('ri-toggle-line', 'ri-toggle-fill');
+        if (dark.classList.contains('ri-sun-fill')){
+                dark.classList.replace('ri-sun-fill', 'ri-moon-clear-line');
         }else{
-                dark.classList.replace('ri-toggle-fill', 'ri-toggle-line')
+                dark.classList.replace('ri-moon-clear-line', 'ri-sun-fill')
         }
         
         // if(document.body.classList.contains('dark-theme'))

@@ -61,9 +61,14 @@
 .continue{
     color: var(--primary-color);
 }
-.ri-toggle-fill{
-    font-size: 2.5rem;
+.ri-sun-fill{
+    font-size: 20px;
     cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.6s ease-in-out;
+}
+.ri-sun-fill:hover{
+    transform:rotate(30deg);
 }
 body{
     background-color: var(--secondary-color);
@@ -102,15 +107,19 @@ nav{
   }
 .moon{
     display: flex;
-    flex: 1;
     justify-content: end;
     align-items: center;
     position: relative;
+    padding: 10px;
     margin-right: 10px;
 }
-.ri-toggle-line{
-    font-size: 2rem;
+.ri-moon-clear-line{
+    font-size: 20px;
     cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+}
+.ri-moon-clear-line{
+    transform:rotate(180deg);
 }
 .ri-close-line{
     display: none;
@@ -1632,6 +1641,50 @@ form .inputBox{
 .cont a{
     color: var(--primary-color);
 }
+.scroll-to-top {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 50px;
+    line-height: 60px;
+    font-size: 16px;
+    z-index: 99;
+    display: none;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    /* -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite; */
+    -webkit-box-shadow: 0px 11px 21.25px 3.75px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 11px 21.25px 3.75px rgba(0, 0, 0, 0.06);
+    background: #2a2a2f;
+   transition: all 5s ease-in-out;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.scroll-to-top:after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 1;
+    background: -o-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.scroll-to-top:hover {
+    background-color: #0072ff;
+}
+.ri-arrow-up-line{
+    font-size: 25px;
+    font-weight: 700;
+}
+
 @media (max-width:1000px) {
 
     .link{
@@ -2134,11 +2187,23 @@ form .inputBox{
         width: 100%;
         justify-content: end;
         font-size:40px;
-        margin-right: 8px;
+        margin-right: 10px;
+
+    }
+    .moon{
+        display: flex;
+        position: absolute;
+        color: var(--primary-color);
+        text-align: end;
+        align-items: flex-end;
+        width: 100%;
+        justify-content: flex-end;
+        padding-right: 45px;
 
     }
     .ri-menu-fill{
         cursor: pointer;
+        z-index: 1;
         font-size: 24px;
     }
     .ri-menu-fill.active{
