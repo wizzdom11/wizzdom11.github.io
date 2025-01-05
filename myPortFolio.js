@@ -95,10 +95,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Scroll smoothly to the top when the button is clicked
     scrollToTopBtn.addEventListener("click", function () {
+        // Add a temporary class for the hover effect reset
+        scrollToTopBtn.classList.add("clicked");
+
+        // Smoothly scroll to the top
         window.scrollTo({
             top: 0,
             behavior: "smooth",
         });
+
+        // Remove the class after a delay to reset the hover effect
+        setTimeout(() => {
+            scrollToTopBtn.classList.remove("clicked");
+        }, 1000); // Match the scroll animation duration
     });
 });
 

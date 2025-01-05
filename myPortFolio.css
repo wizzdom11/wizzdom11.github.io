@@ -1645,8 +1645,8 @@ form .inputBox{
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 50px;
-    right: 50px;
+    bottom: 40px;
+    right: 30px;
     line-height: 60px;
     font-size: 16px;
     z-index: 99;
@@ -1680,6 +1680,10 @@ form .inputBox{
 .scroll-to-top:hover {
     background-color: #0072ff;
 }
+.scroll-to-top.clicked {
+    background-color: #2a2a2f; /* Original background color */
+}
+
 .ri-arrow-up-line{
     font-size: 25px;
     font-weight: 700;
