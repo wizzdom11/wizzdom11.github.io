@@ -602,10 +602,10 @@ transform: scale(1.05);
     width: auto;
 }
 .continue p{
-    color: var(--serv-color);
+    color: var(--primary-color);
 }
 .continue h4{
-    color: var(--primary-color);
+    color: var(--header-color);
 }
 @keyframes next {
     0%{
