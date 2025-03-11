@@ -25,7 +25,8 @@
      --heading-color: #05198a79;
      --skills-content: #f7f8f9;
      --home-color:#e1e6f0;
-     --line-color: #e1e6f0;}
+     --line-color: #e1e6f0;
+    }
 #read{
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -94,21 +95,22 @@ nav{
     padding-right: 60px;
     padding-left: 60px;
     color: var(--header-color);
+    overflow: hidden;
 
     /* max-width: 600px; */
     /* border-bottom: 1px solid #f2f2f2; */
     background-color: var(--nav-color);
     border-bottom: 1px solid var(--line-color);
     z-index: 1111;
+    height: 12vh;
+    
     /* backdrop-filter: blur(6px); */
     /* box-shadow: 0 0 3px 1px #323232; */
 }
-.cap {
-    position: absolute;
-    width: 60px; /* Adjust size as needed */
-    top: -5px;
-    left: 100px;
-  }
+nav img{
+    width: 10rem;
+    height: 10rem;
+}
 .moon{
     display: flex;
     justify-content: end;
@@ -493,9 +495,13 @@ transform: scale(1.05);
     border-radius: 20px;
     width: 100%;
     text-align: center;
-    padding: 20px 20px ;
+    padding: 20px 10px ;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
-
+}
+.here p{
+    text-align: left;
+    padding-left: 10px;
+ 
 }
 .about h1{
     border: none;
@@ -657,6 +663,10 @@ transform: scale(1.05);
 .next h1{
     text-align: center;
     margin-bottom: -2rem;
+}
+.next{
+    background: var(--home-color);
+
 }
 .next p{
     margin-top: 15px;
@@ -2106,6 +2116,10 @@ form .inputBox{
     .nav{
         height: 7vh;
         width: 100%;
+    }
+    nav img{
+        width: 8rem;
+        height: 8rem;
     }
     .cap{
         top: -5px;
